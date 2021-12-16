@@ -172,12 +172,14 @@
         <section class="mt-billboard mt-section__padding-sm--b">
             <div class="mt-billboard__wrapper row no-gutters">
                 <div class="col-lg-8">
-                    <div class="mt-billboard-slider ">
+                    <div class=" ">
                         <div class="mt-billboard__item">
-                            <img src="assets/img/Banner-1.jpg" alt="">
+                            <video id="my_video" src="assets/img/banner-video.mp4" type="video/mp4" 
+                            class="mt-intro_video" width="100%" playsinline="" autoplay="" 
+                            muted="" loop="" poster="assets/img/Banner-1.jpg"></video>
                             <div class="mt-billboard__content">
                                 <h2>
-                                    Getting Products delivered to you from best brands
+                                    Getting products delivered to you from best brands
                                 </h2>
                                 <a href="" class="mt-btn">Learn More</a>
                             </div>
@@ -195,6 +197,16 @@
                         <div class="mt-billboard__item">
                             <img src="assets/img/Banner-2-3.jpg" alt="">
                         </div>
+                        <!-- 
+                        <div class="mt-billboard__item" >
+                            <div style="height:100px; width:100%;background-image: url('assets/img/Banner-2-1.jpg');"></div>
+                        </div>
+                        <div class="mt-billboard__item">
+                            <div style="height:100px; width:100%;background-image: url('assets/img/Banner-2-2.jpg');"></div>
+                        </div>
+                        <div class="mt-billboard__item">
+                            <div style="height:100px; width:100%;background-image: url('assets/img/Banner-2-3.jpg');"></div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -205,7 +217,7 @@
             <div class="mt-home-about__wrapper">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-md-10 m-auto">
+                        <div class="col-12 col-md-10 col-lg-8 col-xl-6 m-auto">
                             <div class="mt-home-about__content text-center">
                                 <p>
                                     Binzagr Professional Solutions works as a fast-paced caterer of more than 1000 products, 
@@ -215,19 +227,27 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-12">
-                            <div id="counters_1" class="d-flex justify-content-between">
-                                <div class="mt-counter-wrapper">
-                                    <div class="counter" data-TargetNum="15000" data-Speed="5000"></div><span>Doors</span>
+                        <div class="col-12 col-md-10 col-lg-8 m-auto">
+                            <div id="counters_1" class="row">
+                                <div class="col-6 col-lg-3">
+                                    <div class="mt-counter-wrapper">
+                                        <div class="counter" data-TargetNum="15000" data-Speed="5000"></div><span>Doors</span>
+                                    </div>
                                 </div>
-                                <div class="mt-counter-wrapper">
-                                    <div class="counter" data-TargetNum="40" data-Speed="5000"></div><span>World Class Brands</span>
+                                <div class="col-6 col-lg-3">
+                                    <div class="mt-counter-wrapper">
+                                        <div class="counter" data-TargetNum="40" data-Speed="5000"></div><span>World Class Brands</span>
+                                    </div>
                                 </div>
-                                <div class="mt-counter-wrapper">
-                                    <div class="counter" data-TargetNum="20" data-Speed="2500"></div><span>Best Categories</span>
+                                <div class="col-6 col-lg-3">
+                                    <div class="mt-counter-wrapper">
+                                        <div class="counter" data-TargetNum="20" data-Speed="2500"></div><span>Best Categories</span>
+                                    </div>
                                 </div>
-                                <div class="mt-counter-wrapper">
-                                    <div class="counter" data-TargetNum="20" data-Speed="2500"></div><span>Cities Coverage</span>
+                                <div class="col-6 col-lg-3">
+                                    <div class="mt-counter-wrapper">
+                                        <div class="counter" data-TargetNum="20" data-Speed="2500"></div><span>Cities Coverage</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -611,7 +631,7 @@
                                 <h2>Shop by World Best Brands </h2>
                             </div>
                         </div>
-                        <div class="col-12 col-md-10 m-auto">
+                        <div class="col-12 col-md-10 col-lg-8 m-auto">
                             <div class="mt-brand-slider slider">
                                 <div class="mt-brand__item">
                                     <img src="assets/img/brand-1.jpg"

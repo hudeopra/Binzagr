@@ -63,8 +63,32 @@ jQuery(document).ready(function ($) {
         speed: 5000,
         autoplay: false,
         arrows: false,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 2001,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
     });
     $('.mt-brand-slider').slick({
         dots: true,
@@ -72,13 +96,13 @@ jQuery(document).ready(function ($) {
         speed: 5000,
         autoplay: true,
         arrows: false,
-        slidesToShow: 5,
+        slidesToShow: 7,
         slidesToScroll: 3,
         responsive: [
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 5,
                     slidesToScroll: 1,
                 }
             },

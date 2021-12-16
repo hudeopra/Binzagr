@@ -173,27 +173,27 @@ textarea {
   border-bottom: 1px solid #fff;
   outline: none;
   padding: 8px;
-  color: #fff;
+  color: #333;
 }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #fff;
+  color: #333;
 }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: #fff;
+  color: #333;
 }
 
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
-  color: #fff;
+  color: #333;
 }
 
 input::placeholder,
 textarea::placeholder {
-  color: #fff;
+  color: #333;
 }
 
 input {
@@ -277,7 +277,7 @@ form .mt-half {
 
 /* input ends */
 /* header__fixed ends */
-.header_fixed.mt-header {
+.header_fixed.mt-header .mt-header__bottom {
   background-color: #fff;
   z-index: 98;
   position: fixed;
@@ -297,6 +297,7 @@ form .mt-half {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   z-index: 99;
+  padding-bottom: 10px;
 }
 
 .admin-bar .header_fixed.mt-header {
@@ -650,7 +651,6 @@ form .mt-half {
 .mt-billboard-slider img {
   height: 100%;
   width: 100%;
-  max-height: 710px;
 }
 
 .mt-home-about__content p {
@@ -714,7 +714,7 @@ form .mt-half {
 .mt-home-product .mt-view-more {
   position: absolute;
   bottom: -48px;
-  right: 45px;
+  right: 15px;
 }
 
 .mt-home-product .mt-view-more i {
@@ -751,6 +751,10 @@ form .mt-half {
 .mt-product__item .mt-btn {
   margin-top: 15px;
   text-align: center;
+}
+
+.mt-product-slider .slick-list {
+  margin: 0 -30px 0 0;
 }
 
 .mt-product-slider .slick-track {
@@ -805,6 +809,7 @@ form .mt-half {
   -o-object-fit: contain;
      object-fit: contain;
   padding: 0 15px;
+  max-width: 200px;
 }
 
 .mt-meeting {
@@ -949,6 +954,26 @@ form .mt-half {
   background-position: left top;
 }
 
+.mt-aside-wrapper input, .mt-aside-wrapper textarea {
+  color: #fff;
+}
+
+.mt-aside-wrapper input::-webkit-input-placeholder, .mt-aside-wrapper textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.mt-aside-wrapper input:-ms-input-placeholder, .mt-aside-wrapper textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+.mt-aside-wrapper input::-ms-input-placeholder, .mt-aside-wrapper textarea::-ms-input-placeholder {
+  color: #fff;
+}
+
+.mt-aside-wrapper input::placeholder, .mt-aside-wrapper textarea::placeholder {
+  color: #fff;
+}
+
 .mt-product-list-page {
   background-color: #8BEFFE;
 }
@@ -966,6 +991,10 @@ form .mt-half {
   background-color: unset;
   padding: 0;
   border-bottom: 1px solid #4D64AD;
+}
+
+.mt-product-list-page .card-header h2 {
+  max-width: unset;
 }
 
 .mt-product-list-page .card-header button:after {
@@ -1047,6 +1076,33 @@ aside.mt-sign-in__form a {
 
 aside.mt-sign-in__form a:hover {
   color: #E21F26;
+}
+
+.mt-tabs .mt-section-heading h2 {
+  padding-left: 30px;
+}
+
+.mt-tabs a:hover, .mt-tabs a.active {
+  background-color: #214099;
+}
+
+.mt-tabs .list-group-item.active, .mt-tabs .list-group-item {
+  background-color: unset;
+  border: 0;
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 1px solid #4D64AD;
+}
+
+@media screen and (min-width: 991px) {
+  .container-fluid {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .container-fluid .mt-aside-wrapper {
+    margin-left: -50px;
+    margin-right: -15px;
+  }
 }
 
 @media screen and (max-width: 991px) {

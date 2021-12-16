@@ -159,9 +159,9 @@ textarea {
   border-bottom: 1px solid #fff;
   outline: none;
   padding: 8px ;
-  color: #fff;
+  color: #333;
   &::placeholder{
-    color: #fff;
+    color: #333;
   }
 }
 input {
@@ -234,7 +234,7 @@ form .mt-half {
 }
 /* input ends */
 /* header__fixed ends */
-.header_fixed.mt-header {
+.header_fixed.mt-header .mt-header__bottom{
   background-color: #fff;
   z-index: 98;
   position: fixed;
@@ -254,6 +254,7 @@ form .mt-half {
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
   z-index: 99;
+  padding-bottom: 10px;
 }
 // height 32
 .admin-bar .header_fixed.mt-header {
@@ -559,7 +560,6 @@ form .mt-half {
 .mt-billboard-slider img {
   height: 100%;
   width: 100%;
-  max-height: 710px;
 }
 .mt-home-about{
   &__content{
@@ -620,7 +620,7 @@ form .mt-half {
   .mt-view-more{
     position: absolute;
     bottom: -48px;
-    right: 45px;
+    right: 15px;
     i{
       transition: all .5s;
     }
@@ -652,6 +652,9 @@ form .mt-half {
   }
 }
 .mt-product-slider {
+  .slick-list{
+    margin: 0 -30px 0 0;
+  }
   .slick-track{
     margin: 0 -15px;;
   }
@@ -694,6 +697,7 @@ form .mt-half {
   img{
     object-fit: contain;
     padding: 0 15px ;
+    max-width: 200px;
   }
 }
 .mt-meeting{
@@ -819,12 +823,18 @@ form .mt-half {
     right: 0;
     background-position: left top;
   }
+  input,textarea{
+    color: #fff;
+    &::placeholder{
+      color: #fff;
+    }
+  }
+
 }
 .mt-product-list-page{
   background-color: #8BEFFE;
   h2{
     font-size: 20px;
-
   }
   .card{
     background-color: unset;
@@ -834,6 +844,9 @@ form .mt-half {
     background-color: unset;
     padding: 0;
     border-bottom: 1px solid #4D64AD;
+    h2{
+      max-width: unset;
+    }
     button{
       &:after {
         font-family: "FontAwesome";
@@ -906,6 +919,35 @@ aside.mt-sign-in__form{
       color: $color-primary;
     }
   }
+}
+.mt-tabs{
+    .mt-section-heading h2{
+      padding-left: 30px;
+    }
+    
+    a:hover ,a.active{
+      background-color: $color-secondary;
+    }
+  .mt-aside-wrapper{
+    
+  }
+  .list-group-item.active,.list-group-item{
+    background-color: unset;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    border-bottom: 1px solid #4D64AD;
+  }
+}
+@media screen and (min-width: 991px){
+.container-fluid{
+  padding-left: 50px;
+  padding-right: 50px;
+  .mt-aside-wrapper{
+    margin-left: -50px;
+    margin-right: -15px;
+  }
+}
 }
 @media screen and (max-width: 991px) {
   .col-lg-4 > a {
