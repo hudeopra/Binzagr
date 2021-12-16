@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- fontawsome -->
+        <link rel='stylesheet'
+            href="assets/library/font-awesome/font-awesome.min.css"
+            type='text/css' media='all' />
+        <!-- slider -->
+        <link rel="stylesheet" href="assets/library/slick-1.8.1/slick/slick.css"
+            />
+        <!-- bootstrap -->
+        <link rel='stylesheet'
+            href="assets/library/bootsrtap/bootstrap.css"
+            type='text/css' media='all' />
+        <!-- google Fonts --><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <!-- main-css -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="icon" href="assets/img/favicon.png" sizes="32x32" />
+    </head>
+    <!-- header starts -->
+    <header class="mt-header">
+            <div class="mt-header__wrapper">
+                <div class="mt-header__top">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="mt-search">
+                                    <form method="GET" action="" accept-charset="UTF-8">
+                                        <div class="mt-form__wrapper">
+                                            <div class="mt-input-wrapper">
+                                                <input type="text" placeholder="Search Products" value="">
+                                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-12  col-xl-4">
+                                <div class="mt-header__logo">
+                                    <a href="">
+                                        <img src="assets/img/Binzagr-logo.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-xl-4">
+                                <div class="mt-header-right">
+                                    <div class="mt-header-contact d-none
+                                        d-sm-block">
+                                    </div>
+                                    <div class="mt-user-options">
+                                        <a class="mt-lang-change mt-lang-ar" href="">
+                                            <span>العربية</span>
+                                        </a>
+                                        <a href="mailto:binzagrprosolutions@binzagr.com.sa">
+                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="https://wa.me/966920002303"> 
+                                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="">
+                                            <i class="fa fa-user" aria-hidden="true"></i>
+                                        </a>
+                                        <a href="javascript:void(0)" class="mt-mini-cart-open">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            Cart
+                                        </a>
+                                        <div class="ham-menu">
+                                            <div class="ham-icon">
+                                                <span class="ham-menu__ham-line"></span>
+                                                <span class="ham-menu__ham-line"></span>
+                                                <span class="ham-menu__ham-line"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-header__bottom">
+                    <div class="container-fluid">
+                        <div class="mt-header__menu">
+                            <div class="mt-header__menu">
+                                <ul>
+                                    <li class="mt-active-menu">
+                                        <a href="">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href=""> Products</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Shop by Brands</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Shop by Categories</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Solutions</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Binzagr Recipies</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Book Online Sales Appointment</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Connect</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-mini-cart">
+                <div class="mt-mini-cart__head view-cart">
+                    <a href="javascript:void(0)" class="mt-cart-close"><i class="fa
+                            fa-times" aria-hidden="true"></i></a>
+                    <h2>
+                        Shopping Cart
+                    </h2>
+                    <span class="mt-mini-cart-item badge">
+                        1
+                    </span>
+                </div>
+                <div class="mt-mini-cart__body">
+                    <div class="mt-mini-cart__item">
+                        <div class="mt-mini-cart__item--img">
+                                                        <img src="" alt="">
+                                                    </div>
+                        <div class="mt-mini-cart__item--content">
+                            <h4>Product 1</h4>
+                            <p>QTY: <span class="mt-mini-cart__item--qty">1</span></p>
+                            <p class="mt-mini-cart__item--price">SAR. 52.5</p>
+                        </div>
+                        <a href="javascript:void(0)" class="mt-mini-cart__item--remove">
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="mt-mini-cart__sub-total d-flex
+                    justify-content-between">
+                    <span class="mt-total-title">Total:</span>
+                    <span class="mt-total-price">SAR 0</span>
+                </div>
+                <div class="mt-mini-cart__checkout">
+                    <a href="" class="mt-btn-viewcart">
+                        <span>VIEW CART</span>
+                    </a>
+                    <a href class="mt-btn-checkout">
+                        <span>CHECKOUT</span>
+                    </a>
+                </div>
+            </div>
+            <div class="mt-overlay"></div>
+        </header>
+    <!-- header ends -->
+    <!-- main starts -->
+    <main class="mt-homepage">
+        <!--billboard section starts -->
+        <section class="mt-billboard mt-section__padding-sm--b">
+            <div class="mt-billboard__wrapper row no-gutters">
+                <div class="col-lg-8">
+                    <div class="mt-billboard-slider ">
+                        <div class="mt-billboard__item">
+                            <img src="assets/img/Banner-1.jpg" alt="">
+                            <div class="mt-billboard__content">
+                                <h2>
+                                    Getting Products delivered to you from best brands
+                                </h2>
+                                <a href="" class="mt-btn">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mt-billboard-slider slider">
+                        <div class="mt-billboard__item">
+                            <img src="assets/img/Banner-2-1.jpg" alt="">
+                        </div>
+                        <div class="mt-billboard__item">
+                            <img src="assets/img/Banner-2-2.jpg" alt="">
+                        </div>
+                        <div class="mt-billboard__item">
+                            <img src="assets/img/Banner-2-3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--billboard section ends -->
+        <!--About Us section starts -->
+        <section class="mt-home-about mt-section__padding-sm--b">
+            <div class="mt-home-about__wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-10 m-auto">
+                            <div class="mt-home-about__content text-center">
+                                <p>
+                                    Binzagr Professional Solutions works as a fast-paced caterer of more than 1000 products, 
+                                    we act as the first-hand buyer or direct recipient from renowned national and 
+                                    international manufacturers, and thus deliver a diverse and disruptive array of products 
+                                    directly to the customer.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div id="counters_1" class="d-flex justify-content-between">
+                                <div class="mt-counter-wrapper">
+                                    <div class="counter" data-TargetNum="15000" data-Speed="5000"></div><span>Doors</span>
+                                </div>
+                                <div class="mt-counter-wrapper">
+                                    <div class="counter" data-TargetNum="40" data-Speed="5000"></div><span>World Class Brands</span>
+                                </div>
+                                <div class="mt-counter-wrapper">
+                                    <div class="counter" data-TargetNum="20" data-Speed="2500"></div><span>Best Categories</span>
+                                </div>
+                                <div class="mt-counter-wrapper">
+                                    <div class="counter" data-TargetNum="20" data-Speed="2500"></div><span>Cities Coverage</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--About Us section ends -->
+        <!--Choose Business section starts -->
+        <section class="mt-home-business  mt-section__padding-sm--b">
+            <div class="mt-home-business__wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mt-section__heading">
+                                <h2>Choose Your Business</h2>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="mt-home-business__list">
+                                <div class="mt-home-business__list--item">
+                                    <h3>
+                                        Hotels
+                                    </h3>
+                                    <img src="assets/img/Hotels.jpg" alt="">
+                                    <p>
+                                        The fresh, hygienic, and high-quality foodstuff procured directly from the most....
+                                    </p>
+                                    <a href="">
+                                        Read More <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="mt-home-business__list">
+                                <div class="mt-home-business__list--item">
+                                    <h3>
+                                        Restaurant
+                                    </h3>
+                                    <img src="assets/img/Resturant.jpg" alt="">
+                                    <p>
+                                        The fresh, hygienic, and high-quality foodstuff procured directly from the most....
+                                    </p>
+                                    <a href="">
+                                        Read More <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="mt-home-business__list">
+                                <div class="mt-home-business__list--item">
+                                    <h3>
+                                        Cafes
+                                    </h3>
+                                    <img src="assets/img/Cafes.jpg" alt="">
+                                    <p>
+                                        A lovely Binzagr story is blended with the delicious delights served at the eleg....
+                                    </p>
+                                    <a href="">
+                                        Read More <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="mt-home-business__list">
+                                <div class="mt-home-business__list--item">
+                                    <h3>
+                                        Healthcare
+                                    </h3>
+                                    <img src="assets/img/Healthcare.jpg" alt="">
+                                    <p>
+                                        An integral role in fostering good health, wellness, and prosperity of the multi....
+                                    </p>
+                                    <a href="">
+                                        Read More <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="mt-home-business__list">
+                                <div class="mt-home-business__list--item">
+                                    <h3>
+                                        Business & Industries
+                                    </h3>
+                                    <img src="assets/img/Business-industry.jpg" alt="">
+                                    <p>
+                                        Binzagr, with an expansive coverage all over Saudi Arabia, and other GCC countri....
+                                    </p>
+                                    <a href="">
+                                        Read More <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="mt-home-business__list">
+                                <div class="mt-home-business__list--item">
+                                    <h3>
+                                        Education
+                                    </h3>
+                                    <img src="assets/img/Education.jpg" alt="">
+                                    <p>
+                                        Binzagr takes it a matter of great privilege to feed and nourish the promising a....
+                                    </p>
+                                    <a href="">
+                                        Read More <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="mt-home-business__list">
+                                <div class="mt-home-business__list--item">
+                                    <h3>
+                                        Bakery
+                                    </h3>
+                                    <img src="assets/img/Bakery.jpg" alt="">
+                                    <p>
+                                        The bakery and confectionery products around you, be it the stunning cakes you l....
+                                    </p>
+                                    <a href="">
+                                        Read More <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="mt-home-business__list">
+                                <div class="mt-home-business__list--item">
+                                    <h3>
+                                        Retail Van Sales
+                                    </h3>
+                                    <img src="assets/img/Rental-van-sales.jpg" alt="">
+                                    <p>
+                                        Our men in van are right near there to reach your doorsteps at a quick pace with....
+                                    </p>
+                                    <a href="">
+                                        Read More <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="mt-home-business__list">
+                                <div class="mt-home-business__list--item">
+                                    <h3>
+                                        Catering
+                                    </h3>
+                                    <img src="assets/img/Catering.jpg" alt="">
+                                    <p>
+                                        We cater for the caterers not just as an act of serving or providing, but an exq....
+                                    </p>
+                                    <a href="">
+                                        Read More <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Choose Business section ends -->
+        <!--Product slider section starts -->
+        <section class="mt-home-product mt-section__padding-sm--t mt-section__padding-md--b">
+            <div class="mt-home-product__wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mt-section__heading">
+                                <h2>We only bring you the best</h2>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <h3>New Products</h3>
+                            <div class="mt-product-slider slider">
+                                <div class="mt-product__item">
+                                    <a href="">
+                                        <div class="mt-product__item--img">
+                                            <img src="assets/img/Product-1.jpg" alt="">
+                                        </div>
+                                        <div class="mt-product__item--content">
+                                            <p>ArlaPro Cream Cheese</p>
+                                            <span>6 x 1100 gm</span>
+                                        </div>
+                                    </a>
+                                    <a class="mt-btn mt-btn__blue" href="javascript:;">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        Add to cart 
+                                    </a>
+                                </div>
+                                <div class="mt-product__item">
+                                    <a href="">
+                                        <div class="mt-product__item--img">
+                                            <img src="assets/img/Product-2.jpg" alt="">
+                                        </div>
+                                        <div class="mt-product__item--content">
+                                            <p>Bull’s-Eye
+                                                Red Hot Chilli</p>
+                                            <span>3 x 2 ltr</span>
+                                        </div>
+                                    </a>
+                                    <a class="mt-btn mt-btn__blue" href="javascript:;">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        Add to cart 
+                                    </a>
+                                </div>
+                                <div class="mt-product__item">
+                                    <a href="">
+                                        <div class="mt-product__item--img">
+                                            <img src="assets/img/Product-3.jpg" alt="">
+                                        </div>
+                                        <div class="mt-product__item--content">
+                                            <p>Potato 
+                                                Roll</p>
+                                            <span>8 pcs x 8 pkts</span>
+                                        </div>
+                                    </a>
+                                    <a class="mt-btn mt-btn__blue" href="javascript:;">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        Add to cart 
+                                    </a>
+                                </div>
+                                <div class="mt-product__item">
+                                    <a href="">
+                                        <div class="mt-product__item--img">
+                                            <img src="assets/img/Product-4.jpg" alt="">
+                                        </div>
+                                        <div class="mt-product__item--content">
+                                            <p>Awaken
+                                                English Breakfast</p>
+                                            <span>16 x 20 x 2 gm</span>
+                                        </div>
+                                    </a>
+                                    <a class="mt-btn mt-btn__blue" href="javascript:;">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        Add to cart 
+                                    </a>
+                                </div>
+                                <div class="mt-product__item">
+                                    <a href="">
+                                        <div class="mt-product__item--img">
+                                            <img src="assets/img/Product-1.jpg" alt="">
+                                        </div>
+                                        <div class="mt-product__item--content">
+                                            <p>ArlaPro Cream Cheese</p>
+                                            <span>6 x 1100 gm</span>
+                                        </div>
+                                    </a>
+                                    <a class="mt-btn mt-btn__blue" href="javascript:;">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        Add to cart 
+                                    </a>
+                                </div>
+                                <div class="mt-product__item">
+                                    <a href="">
+                                        <div class="mt-product__item--img">
+                                            <img src="assets/img/Product-2.jpg" alt="">
+                                        </div>
+                                        <div class="mt-product__item--content">
+                                            <p>Bull’s-Eye
+                                                Red Hot Chilli</p>
+                                            <span>3 x 2 ltr</span>
+                                        </div>
+                                    </a>
+                                    <a class="mt-btn mt-btn__blue" href="javascript:;">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        Add to cart 
+                                    </a>
+                                </div>
+                                <div class="mt-product__item">
+                                    <a href="">
+                                        <div class="mt-product__item--img">
+                                            <img src="assets/img/Product-3.jpg" alt="">
+                                        </div>
+                                        <div class="mt-product__item--content">
+                                            <p>Potato 
+                                                Roll</p>
+                                            <span>8 pcs x 8 pkts</span>
+                                        </div>
+                                    </a>
+                                    <a class="mt-btn mt-btn__blue" href="javascript:;">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        Add to cart 
+                                    </a>
+                                </div>
+                                <div class="mt-product__item">
+                                    <a href="">
+                                        <div class="mt-product__item--img">
+                                            <img src="assets/img/Product-4.jpg" alt="">
+                                        </div>
+                                        <div class="mt-product__item--content">
+                                            <p>Awaken
+                                                English Breakfast</p>
+                                            <span>16 x 20 x 2 gm</span>
+                                        </div>
+                                    </a>
+                                    <a class="mt-btn mt-btn__blue" href="javascript:;">
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        Add to cart 
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="mt-view-more">
+                                <a href="">View More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Product section ends -->
+        <!--Category section starts -->
+        <section class="mt-home-category mt-section__padding-sm--t">
+            <div class="mt-home-cateogry__wrapper">
+                <div class="container-fluid">
+                    <div class="row no-gutters">
+                        <div class="col-12">
+                            <div class="mt-section__heading">
+                                <h2>Popular Categories</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row no-gutters ">
+                    <div class="col-12 col-md-6 col-lg-8">
+                        <div class="mt-home-category__item">
+                            <a href="">
+                                <img src="assets/img/Bread-pastries.jpg" alt="">
+                                <h3>Bread & Pastries</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="mt-home-category__item">
+                            <a href="">
+                                <img src="assets/img/Meat.jpg" alt="">
+                                <h3>Meat</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="mt-home-category__item">
+                            <a href="">
+                                <img src="assets/img/Dairy.jpg" alt="">
+                                <h3>Dairy Products</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="mt-home-category__item">
+                            <a href="">
+                                <img src="assets/img/Bevrages.jpg" alt="">
+                                <h3>Beverages</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        <div class="mt-home-category__item">
+                            <a href="">
+                                <img src="assets/img/Sauces.jpg" alt="">
+                                <h3>Sauces</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Category section ends -->
+        <!--Brand section starts -->
+        <section class="mt-brand mt-section__padding-sm--t mt-section__padding-md--b">
+            <div class="mt-brand__wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mt-section__heading text-center">
+                                <h2>Shop by World Best Brands </h2>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-10 m-auto">
+                            <div class="mt-brand-slider slider">
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-1.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-2.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-3.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-4.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-5.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-6.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-7.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-8.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-9.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-10.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-11.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-12.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-13.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-14.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-15.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-16.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-17.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-18.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-19.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-20.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-21.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-22.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-23.jpg"
+                                        alt="brand logo">
+                                </div>
+                                <div class="mt-brand__item">
+                                    <img src="assets/img/brand-24.jpg"
+                                        alt="brand logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Brand section ends -->
+    </main>
+    <!-- main ends -->
+    <body>
+        <!-- jquery -->
+        <script src="assets/library/jquery-3.5.1.min.js"></script>
+        <!-- slick-slider -->
+        <script type="text/javascript"
+            src="assets/library/slick-1.8.1/slick/slick.js"></script>
+        <!-- boottrap -->
+        <script src="assets/library/bootsrtap/bootstrap.min.js"></script>
+        <!-- counter -->
+        <script src="assets/library/multi-animated-counter.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
