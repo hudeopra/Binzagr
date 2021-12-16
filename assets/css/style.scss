@@ -34,7 +34,7 @@ a {
 }
 
 .mt-btn {
-  padding: 12px 25px;
+  padding: 10px 25px;
   color: #fff;
   transition: all 0.5s ease-in-out;
   font-weight: bold;
@@ -50,6 +50,15 @@ a {
     background-color: $color-secondary;
     &:hover {
       background-color: $color-primary;
+    }
+  }
+  &__line{
+    border: 1px solid $color-secondary !important;
+    background-color: transparent;
+    color: $color-secondary;
+    &:hover{
+      background-color: $color-primary;
+      border-color: $color-primary !important;
     }
   }
 }
@@ -151,12 +160,59 @@ textarea {
   outline: none;
   padding: 8px ;
   color: #fff;
+  &::placeholder{
+    color: #fff;
+  }
 }
 input {
   height: 45px;
 }
 input[type="submit"] {
-  max-width: 150px;
+  border-bottom: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  height: auto;
+  width: auto;
+}
+
+input[type="radio"] {
+  display: none;
+  margin-bottom: 15px;
+}
+
+input[type="radio"]:checked ~ label:after {
+  display: block;
+}
+
+input[type="radio"] ~ label {
+  margin-left: 30px;
+  position: relative;
+}
+
+input[type="radio"] ~ label:before, input[type="radio"] ~ label:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+input[type="radio"] ~ label:before {
+  top: 2px;
+  left: -30px;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #76787d;
+}
+
+input[type="radio"] ~ label:after {
+  top: 5px;
+  left: -27px;
+  height: 14px;
+  width: 14px;
+  background-color: #e1251b;
+  display: none;
 }
 textarea {
   height: 150px;
@@ -763,9 +819,6 @@ form .mt-half {
     right: 0;
     background-position: left top;
   }
-  &.mt-sign-in__form{
-    padding:0 50px;
-  }
 }
 .mt-product-list-page{
   background-color: #8BEFFE;
@@ -837,7 +890,22 @@ form .mt-half {
   .mt-product-list{
     margin-bottom: -30px;
   }
+}
+.mt-sign-in-page{
 
+}
+aside.mt-sign-in__form,.mt-register-offline{
+ padding-left:  50px;
+ padding-right:  50px;
+}
+aside.mt-sign-in__form{
+  color: #fff;
+  a{
+    color: #fff;
+    &:hover{
+      color: $color-primary;
+    }
+  }
 }
 @media screen and (max-width: 991px) {
   .col-lg-4 > a {
