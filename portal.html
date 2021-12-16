@@ -21,10 +21,10 @@
         <link rel='stylesheet'
             href="assets/library/bootsrtap/bootstrap.css"
             type='text/css' media='all' />
-            <!-- google Fonts -->
-            <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <!-- google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
         <!-- main-css -->
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="icon" href="assets/img/favicon.png" sizes="32x32" />
@@ -168,60 +168,141 @@
     </header>
     <!-- header ends -->
     <!-- main starts -->
-    <main class="mt-sign-in-page">
-        <section class="mt-sign-in ">
+    <main class="mt-portal-page">
+        <section class="mt-portal mt-tabs">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-lg-5 mt-section__padding-sm--tb">
-                        <aside class="mt-sign-in__form mt-aside-wrapper">
-                            <form action="https://binzagrprof.961digital.com/static/account.html">
-                                <div class="mt-section-heading">
-                                    <h2>Sign in to Binzagr</h2>
-                                </div>
-                                <div class="mt-input-wrapper">
-                                    <input type="email" placeholder="Email Address">
-                                </div>
-                                <div class="mt-input-wrapper mb-2">
-                                    <input type="password" placeholder="Passowrd">
-                                </div>
-                                <div class="d-flex justify-content-between">
-                                    <div class="mt-input-wrapper">
-                                        <input type="checkbox" id="sign-in">
-                                        <label for="#sign-in">
-                                            Stay signed in?
-                                        </label>
-                                    </div>
-                                    <a href="">Forgot Passowrd?</a>
-                                </div>
-                                <div class="mt-input-wrapper">
-                                    <input type="submit" value="Sign In" class="mt-btn mt-btn__blue">
-                                </div>
-                            </form>
+                    <div class="col-12 col-md-4 col-lg-3 md-5 mb-md-0">
+                        <aside class="mt-aside-wrapper  mt-section__padding-sm--tb">
+                            <div class="mt-section-heading">
+                                <h2>My Portal</h3>
+                            </div>
+                            <div class="list-group mt-portal-aside" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="list-notification-list" 
+                                data-toggle="list" href="#list-notification" role="tab" aria-controls="notification"><img src="assets/img/bell.svg" alt=""> Notification</a>
+                                <a class="list-group-item list-group-item-action" id="list-payment-list" 
+                                data-toggle="list" href="#list-payment" role="tab" aria-controls="payment"><img src="assets/img/payment.svg" alt=""> Payment</a>
+                                <a class="list-group-item list-group-item-action" id="list-order-list" 
+                                data-toggle="list" href="#list-order" role="tab" aria-controls="order"> <img src="assets/img/cart-order.svg" alt=""> Order</a>
+                            </div>
                         </aside>
                     </div>
-                    <div class="col-12 col-lg-5 mt-section__padding-sm--tb">
-                        <div class="mt-register-offline">
-                            <h2>Register with Binzagr</h2>
-                            <p>Do you trade with us offline?</p>
-                            <form action="https://binzagrprof.961digital.com/static/register.html">
-                                <div class="mt-input-wrapper mb-0">
-                                    <input type="radio" id="trade-offline-yes" name="offline-trading" value="Yes">
-                                    <label for="trade-offline-yes">Yes</label>
+                    <div class="col-12 col-md-8 col-lg-9">
+                    <div class="tab-content mt-section__padding-sm--tb" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="list-notification" role="tabpanel" aria-labelledby="list-notification-list">
+                            <div class="mt-portal__content">    
+                                <div class="d-flex flex-wrap mb-5">
+                                        <div class="col-12 d-flex flex-wrap justify-content-between w-100 align-items-center">
+                                            <h2>Account</h2>
+                                        <div class="mt-buttons">
+                                            <a class="mt-btn mt-btn__blue mr-3 mt-0" href=""><i class="fa fa-shopping-cart mr-2" aria-hidden="true"></i> Order Now</a>
+                                            <a class="mt-btn mt-btn__line  mt-0" href=""> <img src="assets/img/wallet.svg" alt=""> Binzagr E-Wallet</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="mt-input-wrapper mb-5">
-                                    <input type="radio" id="trade-offline-no" name="offline-trading" value="no">
-                                    <label for="trade-offline-no">No</label>
+                                <div class="d-flex flex-wrap">
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="mt-portal__menu-item">
+                                            <a href="">
+                                                <img src="assets/img/sales-history.svg" alt="">
+                                                <div class="mt-portal__menu-item--content">
+                                                    <h3>Sales History</h3>
+                                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="mt-portal__menu-item">
+                                            <a href="">
+                                                <img src="assets/img/pending-invoices.svg" alt="">
+                                                <div class="mt-portal__menu-item--content">
+                                                    <h3>Pending Invoices</h3>
+                                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="mt-portal__menu-item">
+                                            <a href="">
+                                                <img src="assets/img/credit-limit.svg" alt="">
+                                                <div class="mt-portal__menu-item--content">
+                                                    <h3>Credit Limit</h3>
+                                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="mt-portal__menu-item">
+                                            <a href="">
+                                                <img src="assets/img/account-statement.svg" alt="">
+                                                <div class="mt-portal__menu-item--content">
+                                                    <h3>Account Statement</h3>
+                                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="mt-portal__menu-item">
+                                            <a href="">
+                                                <img src="assets/img/digital-catalogue.svg" alt="">
+                                                <div class="mt-portal__menu-item--content">
+                                                    <h3>Digital Catalogue</h3>
+                                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="mt-portal__menu-item">
+                                            <a href="">
+                                                <img src="assets/img/sample-request.svg" alt="">
+                                                <div class="mt-portal__menu-item--content">
+                                                    <h3>Sample Request</h3>
+                                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="mt-portal__menu-item">
+                                            <a href="">
+                                                <img src="assets/img/get-quote.svg" alt="">
+                                                <div class="mt-portal__menu-item--content">
+                                                    <h3>Get a Quote</h3>
+                                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                                        <div class="mt-portal__menu-item">
+                                            <a href="">
+                                                <img src="assets/img/order-alarm.svg" alt="">
+                                                <div class="mt-portal__menu-item--content">
+                                                    <h3>Order Alarm</h3>
+                                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="mt-input-wrapper">
-                                    <input type="submit" class="mt-btn
-                                        mt-btn__line" value="Request an online account">
-                                </div>
-                            </form>
+                            </div>
                         </div>
+                        <div class="tab-pane fade" id="list-payment" role="tabpanel" aria-labelledby="list-payment-list">
+                            <h2 class="">Under Construction</h2>
+                        </div>
+                        <div class="tab-pane fade" id="list-order" role="tabpanel" aria-labelledby="list-order-list">
+                            <h2 class="">Under Construction</h2>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
-        </section>
+    </section>
     </main>
     <!-- main ends -->
     <!-- footer starts -->

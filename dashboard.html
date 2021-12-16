@@ -24,7 +24,7 @@
         <!-- google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
         <!-- main-css -->
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="icon" href="assets/img/favicon.png" sizes="32x32" />
@@ -183,65 +183,54 @@
                                 <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-password" role="tab" aria-controls="messages">Password</a>
                                 <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-payment" role="tab" aria-controls="settings">Payments</a>
                                 <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-orders" role="tab" aria-controls="settings">My Orders</a>
-                                <a href="">Log Out</a>
+                                <a class="mt-log-out" href="">Log Out</a>
                             </div>
                         </aside>
                     </div>
                     <div class="col-12 col-md-8">
-                    <div class="tab-content mt-section__padding-sm--tb" id="nav-tabContent">
+                    <div class="tab-content mt-input-dark mt-section__padding-sm--tb" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="list-account" role="tabpanel" aria-labelledby="list-account-list">
                             <div class="mt-account__content">
                                 <h2>Account</h2>
-                                <div class="mt-profile">
-                                    <img class="mt-profile-img" src="" alt="">
-                                        <div class="mt-2 mt-mb-0 d-md-inline-block">
-                                            <a class="mt-btn" href="">Upload Picture</a>
-                                        </div>
+                                <div class="mt-profile mb-5">
+                                    <img class="mt-profile-img" src="assets/img/account-profile.jpg" alt="">
+                                            <a class="mt-btn mt-btn__underline mt-2" href="">Upload Picture</a>
                                 </div>
                                 <div class="mt-form-wrapper">
                                     <form action="">
                                         <div class="mt-half">
                                             <div class="mt-input-wrapper">
-                                                <label for="f-name">First Name</label>
-                                                <input type="text" id="f-name">
+                                                <input type="text" id="f-name" placeholder="First Name">
                                             </div>
                                             <div class="mt-input-wrapper">
-                                                <label for="l-name">Last Name</label>
-                                                <input type="text" id="l-name">
+                                                <input type="text" id="l-name" placeholder="Last Name">
                                             </div>
                                         </div>
                                         <div class="mt-half">
                                             <div class="mt-input-wrapper">
-                                                <label for="email">Email</label>
-                                                <input type="email" id="email">
+                                                <input type="email" id="email" placeholder="Email Address">
                                             </div>
                                             <div class="mt-input-wrapper">
-                                                <label for="number">Phone Number</label>
-                                                <input type="text" id="f-name">
+                                                <input type="tel" id="" placeholder="Phone Number">
                                             </div>
                                         </div>
                                         <div class="mt-input-wrapper">
-                                            <label for="address">Address</label>
-                                            <input type="texc" id="address">
+                                            <input type="text" id="address"  placeholder="Address">
                                         </div>
                                         <div class="mt-half">
                                             <div class="mt-input-wrapper">
-                                                <label for="city">City</label>
-                                                <input type="text" id="city">
+                                                <input type="text" id="city" placeholder="City">
                                             </div>
                                             <div class="mt-input-wrapper">
-                                                <label for="state">State</label>
-                                                <input type="text" id="state">
+                                                <input type="text" id="state"  placeholder="State">
                                             </div>
                                         </div>
                                         <div class="mt-half">
                                             <div class="mt-input-wrapper">
-                                                <label for="zip-code">Zip Code</label>
-                                                <input type="text" id="zip-code">
+                                                <input type="text" id="zip-code"  placeholder="Zip Code">
                                             </div>
                                             <div class="mt-input-wrapper">
-                                                <label for="country">Country</label>
-                                                <input type="text" id="country">
+                                                <input type="text" id="country" placeholder="Country">
                                             </div>
                                         </div>
                                         <input class="mt-btn mt-btn__invert" type="submit" value="Save Changes">
@@ -273,9 +262,11 @@
     <!-- footer starts -->
     <footer class="mt-footer">
         <!--meeting section starts -->
-        <section class="mt-meeting">
+        <section class="mt-meeting mt-section__padding-sm--b">
             <div class="mt-meeting__wrapper">
-                <img src="assets/img/meeting.jpg" alt="">
+                <div class="mt-meeting__img">
+                    <img src="assets/img/meeting.jpg" alt="">
+                </div>
                 <div class="mt-meeting__content">
                     <div class="container-fluid">
                         <h2>
@@ -288,7 +279,7 @@
         </section>
         <!--meeting section ends -->
         <div class="mt-footer__wrapper">
-            <section class="mt-footer__top">
+            <section class="mt-footer__top mt-section__padding-sm--b">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 col-md-6 col-lg-2">
@@ -376,43 +367,47 @@
                     </div>
                 </div>
             </section>
-            <s class="mt-footer__bottom">
-                <div class="container-fluid">
+            <section class="mt-footer__bottom ">
+                <div class="container-fluid mt-section__padding-sm--tb">
                     <div class="row">
                         <div class="col-12 col-md-6">
-                            <h5>Follow Us !</h5>
-                            <ul>
-                                <li>
-                                    <a href="">
-                                        <i class="fa fa-instagram" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="d-flex align-items-center">
+                                <h5>Follow Us !</h5>
+                                <ul class="mt-social-icons">
+                                    <li>
+                                        <a href="">
+                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="col-12 col-md-6">
-                            <ul>
-                                <li>
-                                    <a href="">Terms and Conditions</a>
-                                </li>
-                                <li>
-                                    <a href="">Privacy Policy</a>
-                                </li>
-                            </ul>
-                            <p>@Copyright Binzagr</p>
+                            <div class="d-flex mt-right">
+                                <ul class="mt-conditions">
+                                    <li>
+                                        <a href="">Terms and Conditions</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Privacy Policy</a>
+                                    </li>
+                                </ul>
+                                <p>@Copyright Binzagr</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </s>
+            </section>
         </div>
     </footer>
     <!-- footer ends -->

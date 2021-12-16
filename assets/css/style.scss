@@ -32,7 +32,7 @@ a {
     text-decoration: none;
   }
 }
-
+p{font-weight: 600;}
 .mt-btn {
   padding: 10px 25px;
   color: #fff;
@@ -59,6 +59,16 @@ a {
     &:hover{
       background-color: $color-primary;
       border-color: $color-primary !important;
+    }
+  }
+  &__underline{
+    background-color: transparent;
+    padding: 0;
+    color: #333;
+    text-decoration: underline;
+    &:hover{
+      color: $color-primary;
+      background-color: unset;
     }
   }
 }
@@ -147,6 +157,11 @@ section h2 {
 /* section default stats */
 
 /* input ends */
+button{
+  &:focus{
+    outline: none;
+  }
+}
 .mt-input-wrapper {
   margin-bottom: 30px;
   position: relative;
@@ -158,10 +173,13 @@ textarea {
   border: 0;
   border-bottom: 1px solid #fff;
   outline: none;
-  padding: 8px ;
+  padding: 8px 12px;
   color: #333;
   &::placeholder{
     color: #333;
+  }
+  &:focus,&:active{
+    border-color: $color-primary !important;
   }
 }
 input {
@@ -295,9 +313,8 @@ form .mt-half {
 .mt-header__menu ul{
   display: flex;
 }
-.mt-header__wrapper{
-	padding: 15px 0;
-	.mt-form__wrapper{
+	.mt-search{
+    margin:0 15px;
 		.mt-input-wrapper{
 			display: flex; 
 			border: 1px solid #eee;
@@ -320,6 +337,8 @@ form .mt-half {
 			}
 		}
 	}
+.mt-header__wrapper{
+	padding: 15px 0;
 	.mt-header__logo{
 		text-align: center;
 	}
@@ -715,15 +734,21 @@ form .mt-half {
       height: 100%;
       width: 100%;
     }
+    img{
+      max-height: 500px;
+      object-fit: cover;
+      object-position: bottom;
+    }
   }
   h2{
     max-width:  600px;
     color: #fff;
   }
+  
   &__content{
     position: absolute;
     top: 50px;
-    width: 100%;
+    width: 620px;
   }
 }
 .mt-footer{
@@ -760,6 +785,9 @@ form .mt-half {
       display: block;
     }
     .mt-input-wrapper{
+      input,input::placeholder{
+        color: #fff;
+      }
       button{
         position: absolute;
         right: 0px;
@@ -799,6 +827,9 @@ form .mt-half {
       a{
         margin-right: 20px;}
     }
+    .mt-right{
+      justify-content:flex-end;
+    }
   }
 }
 .mt-aside-wrapper{
@@ -830,6 +861,24 @@ form .mt-half {
     }
   }
 
+}
+.mt-pattern{
+  position: relative;
+  padding-bottom: 80px;
+  &:after{
+    content:'';
+    background-image: url('../img/binzagr-pattern.svg');
+  height: 60px;
+    width: 100%;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bott;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+  }
 }
 .mt-product-list-page{
   background-color: #8BEFFE;
@@ -924,13 +973,6 @@ aside.mt-sign-in__form{
     .mt-section-heading h2{
       padding-left: 30px;
     }
-    
-    a:hover ,a.active{
-      background-color: $color-secondary;
-    }
-  .mt-aside-wrapper{
-    
-  }
   .list-group-item.active,.list-group-item{
     background-color: unset;
     border: 0;
@@ -938,6 +980,200 @@ aside.mt-sign-in__form{
     font-weight: bold;
     border-bottom: 1px solid #4D64AD;
   }
+  .list-group-item{
+    &:hover ,&.active{
+      background-color: $color-secondary;
+    }
+
+  }
+  .mt-log-out{
+    position: absolute;
+    bottom: 30px;
+    left: -20px;
+  }
+  .list-group-item{
+    img{
+      width: 18px;
+      margin-right: 10px;
+    }
+  }
+}
+.mt-input-dark{
+  input,textarea{
+    border-bottom: 1px solid $color-secondary;
+  }
+}
+.mt-buttons{
+  img{
+    width: 18px;
+    margin-right: 10px;
+    margin-top: -3px;
+  }
+  .mt-btn__line:hover{
+    img{
+      filter: invert(97%) sepia(100%) saturate(11%) hue-rotate(236deg) brightness(104%) contrast(104%);
+    }
+  }
+}
+.mt-portal-page{
+  background-color: #F7F7FA;
+}
+.mt-portal{
+  &__menu-item{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    height: 250px;
+    margin-bottom: 30px;
+    position: relative;
+    img{
+      height: 100px;
+      width: auto;
+      margin-bottom: 50px;
+    }
+    h3{
+      font-weight: bold;
+      color: $color-secondary;
+    }
+    &--content{
+      position: absolute;
+      bottom: 20px;
+      h3{
+        margin-right: 60px;
+      }
+      i{
+        position: absolute;
+        right: 20px;
+        top: 40%;
+        transform: translateY(-50%);
+        font-size: 20px;
+      }
+    }
+  }
+}
+.mt-inner-page-banner__wrapper{
+  position: relative;
+  h2{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 60px;
+  }
+}
+.mt-profile-img{
+  border-radius: 50%;
+  width: 80px;
+  display: block;
+}
+
+.mt-about-us-page{
+  .mt-about{
+    background-color: $color-secondary-dark;
+    color: #fff;
+  }
+  .mt-pattern{
+    padding-bottom: 150px;
+    &:after{
+      height: 140px;
+    }
+
+  }
+  h3{
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+}
+.mt-mission-vision{
+  background-image: url("../img/mission-vision.jpg");
+  background-size: cover;
+  &__content{
+    &--item{
+      padding-top: 50px;
+      p{
+        font-weight: bold;
+      }
+    }
+  }
+}
+.mt-value{
+  &__item{
+    text-align: center;
+    img{
+      height: 80px;
+      margin-bottom: 30px;
+    }
+    h3{
+      margin-bottom: 10px;
+      color: $color-secondary;
+    }
+    p{
+      font-weight: 600;
+    }
+  }
+}
+.mt-leadership{
+  background-color: #F7F7FA;
+  overflow: hidden;
+  &__item{
+    width: 100%;
+    p{
+      font-weight: 500;
+    }
+    &--user-detail{
+      margin-bottom: 60px;
+      img{
+        width: 150px;
+      }
+      h4{
+        font-weight: bold;
+      }
+    }
+    &--content{
+      
+    max-width: 800px;
+    }
+    &--user-img{
+      position: absolute;
+      right: -50px;
+      bottom: 0;
+      max-width: 40%;
+      max-height: 95%;
+      img{
+        object-fit: contain;
+      }
+    }
+  }
+  .row .col-12:nth-of-type(even) .mt-leadership__item{
+    &--content{
+      position: relative;
+      margin-left: auto;
+    }
+    &--user-img{
+      right: auto;
+      left: -50px;
+    }
+    &:before{
+      content: "";
+      height: 100%;
+      width: 120%;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      right: -50px;
+      left: -50px;
+      z-index: 0;
+    }
+  }
+}
+.mt-team{
+  color: #fff;
+  .mt-meeting__img{
+    &:after{display: none;}
+  }
+
 }
 @media screen and (min-width: 991px){
 .container-fluid{
@@ -947,6 +1183,9 @@ aside.mt-sign-in__form{
     margin-left: -50px;
     margin-right: -15px;
   }
+}
+.mt-inner-page-banner__wrapper h2{
+  left: 50px;
 }
 }
 @media screen and (max-width: 991px) {

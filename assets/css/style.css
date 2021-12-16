@@ -33,6 +33,10 @@ a:hover {
   text-decoration: none;
 }
 
+p {
+  font-weight: 600;
+}
+
 .mt-btn {
   padding: 10px 25px;
   color: #fff;
@@ -67,6 +71,18 @@ a:hover {
 .mt-btn__line:hover {
   background-color: #E21F26;
   border-color: #E21F26 !important;
+}
+
+.mt-btn__underline {
+  background-color: transparent;
+  padding: 0;
+  color: #333;
+  text-decoration: underline;
+}
+
+.mt-btn__underline:hover {
+  color: #E21F26;
+  background-color: unset;
 }
 
 .slick-dots {
@@ -160,6 +176,10 @@ section h2 {
 
 /* section default stats */
 /* input ends */
+button:focus {
+  outline: none;
+}
+
 .mt-input-wrapper {
   margin-bottom: 30px;
   position: relative;
@@ -172,7 +192,7 @@ textarea {
   border: 0;
   border-bottom: 1px solid #fff;
   outline: none;
-  padding: 8px;
+  padding: 8px 12px;
   color: #333;
 }
 
@@ -194,6 +214,12 @@ textarea::-ms-input-placeholder {
 input::placeholder,
 textarea::placeholder {
   color: #333;
+}
+
+input:focus, input:active,
+textarea:focus,
+textarea:active {
+  border-color: #E21F26 !important;
 }
 
 input {
@@ -347,11 +373,11 @@ form .mt-half {
   display: flex;
 }
 
-.mt-header__wrapper {
-  padding: 15px 0;
+.mt-search {
+  margin: 0 15px;
 }
 
-.mt-header__wrapper .mt-form__wrapper .mt-input-wrapper {
+.mt-search .mt-input-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -361,21 +387,25 @@ form .mt-half {
   margin: 20px 0;
 }
 
-.mt-header__wrapper .mt-form__wrapper .mt-input-wrapper input {
+.mt-search .mt-input-wrapper input {
   background-color: transparent;
   border-color: #979797;
   border: 0;
 }
 
-.mt-header__wrapper .mt-form__wrapper .mt-input-wrapper button {
+.mt-search .mt-input-wrapper button {
   border: none;
   background-color: transparent;
 }
 
-.mt-header__wrapper .mt-form__wrapper .mt-input-wrapper button i {
+.mt-search .mt-input-wrapper button i {
   color: #9ACDD9;
   font-size: 20px;
   padding: 0 10px;
+}
+
+.mt-header__wrapper {
+  padding: 15px 0;
 }
 
 .mt-header__wrapper .mt-header__logo {
@@ -832,6 +862,14 @@ form .mt-half {
   width: 100%;
 }
 
+.mt-meeting__img img {
+  max-height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
 .mt-meeting h2 {
   max-width: 600px;
   color: #fff;
@@ -840,7 +878,7 @@ form .mt-half {
 .mt-meeting__content {
   position: absolute;
   top: 50px;
-  width: 100%;
+  width: 620px;
 }
 
 .mt-footer {
@@ -878,6 +916,22 @@ form .mt-half {
 .mt-footer__newsletter input {
   padding-right: 50px;
   display: block;
+}
+
+.mt-footer__newsletter .mt-input-wrapper input, .mt-footer__newsletter .mt-input-wrapper input::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.mt-footer__newsletter .mt-input-wrapper input, .mt-footer__newsletter .mt-input-wrapper input:-ms-input-placeholder {
+  color: #fff;
+}
+
+.mt-footer__newsletter .mt-input-wrapper input, .mt-footer__newsletter .mt-input-wrapper input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.mt-footer__newsletter .mt-input-wrapper input, .mt-footer__newsletter .mt-input-wrapper input::placeholder {
+  color: #fff;
 }
 
 .mt-footer__newsletter .mt-input-wrapper button {
@@ -928,6 +982,12 @@ form .mt-half {
   margin-right: 20px;
 }
 
+.mt-footer__bottom .mt-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 .mt-aside-wrapper {
   margin-left: -15px;
   background-color: #03153D;
@@ -972,6 +1032,26 @@ form .mt-half {
 
 .mt-aside-wrapper input::placeholder, .mt-aside-wrapper textarea::placeholder {
   color: #fff;
+}
+
+.mt-pattern {
+  position: relative;
+  padding-bottom: 80px;
+}
+
+.mt-pattern:after {
+  content: '';
+  background-image: url("../img/binzagr-pattern.svg");
+  height: 60px;
+  width: 100%;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: bott;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
 .mt-product-list-page {
@@ -1082,16 +1162,226 @@ aside.mt-sign-in__form a:hover {
   padding-left: 30px;
 }
 
-.mt-tabs a:hover, .mt-tabs a.active {
-  background-color: #214099;
-}
-
 .mt-tabs .list-group-item.active, .mt-tabs .list-group-item {
   background-color: unset;
   border: 0;
   color: #fff;
   font-weight: bold;
   border-bottom: 1px solid #4D64AD;
+}
+
+.mt-tabs .list-group-item:hover, .mt-tabs .list-group-item.active {
+  background-color: #214099;
+}
+
+.mt-tabs .mt-log-out {
+  position: absolute;
+  bottom: 30px;
+  left: -20px;
+}
+
+.mt-tabs .list-group-item img {
+  width: 18px;
+  margin-right: 10px;
+}
+
+.mt-input-dark input, .mt-input-dark textarea {
+  border-bottom: 1px solid #214099;
+}
+
+.mt-buttons img {
+  width: 18px;
+  margin-right: 10px;
+  margin-top: -3px;
+}
+
+.mt-buttons .mt-btn__line:hover img {
+  -webkit-filter: invert(97%) sepia(100%) saturate(11%) hue-rotate(236deg) brightness(104%) contrast(104%);
+          filter: invert(97%) sepia(100%) saturate(11%) hue-rotate(236deg) brightness(104%) contrast(104%);
+}
+
+.mt-portal-page {
+  background-color: #F7F7FA;
+}
+
+.mt-portal__menu-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  height: 250px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.mt-portal__menu-item img {
+  height: 100px;
+  width: auto;
+  margin-bottom: 50px;
+}
+
+.mt-portal__menu-item h3 {
+  font-weight: bold;
+  color: #214099;
+}
+
+.mt-portal__menu-item--content {
+  position: absolute;
+  bottom: 20px;
+}
+
+.mt-portal__menu-item--content h3 {
+  margin-right: 60px;
+}
+
+.mt-portal__menu-item--content i {
+  position: absolute;
+  right: 20px;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.mt-inner-page-banner__wrapper {
+  position: relative;
+}
+
+.mt-inner-page-banner__wrapper h2 {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #fff;
+  font-size: 60px;
+}
+
+.mt-profile-img {
+  border-radius: 50%;
+  width: 80px;
+  display: block;
+}
+
+.mt-about-us-page .mt-about {
+  background-color: #03153D;
+  color: #fff;
+}
+
+.mt-about-us-page .mt-pattern {
+  padding-bottom: 150px;
+}
+
+.mt-about-us-page .mt-pattern:after {
+  height: 140px;
+}
+
+.mt-about-us-page h3 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.mt-mission-vision {
+  background-image: url("../img/mission-vision.jpg");
+  background-size: cover;
+}
+
+.mt-mission-vision__content--item {
+  padding-top: 50px;
+}
+
+.mt-mission-vision__content--item p {
+  font-weight: bold;
+}
+
+.mt-value__item {
+  text-align: center;
+}
+
+.mt-value__item img {
+  height: 80px;
+  margin-bottom: 30px;
+}
+
+.mt-value__item h3 {
+  margin-bottom: 10px;
+  color: #214099;
+}
+
+.mt-value__item p {
+  font-weight: 600;
+}
+
+.mt-leadership {
+  background-color: #F7F7FA;
+  overflow: hidden;
+}
+
+.mt-leadership__item {
+  width: 100%;
+}
+
+.mt-leadership__item p {
+  font-weight: 500;
+}
+
+.mt-leadership__item--user-detail {
+  margin-bottom: 60px;
+}
+
+.mt-leadership__item--user-detail img {
+  width: 150px;
+}
+
+.mt-leadership__item--user-detail h4 {
+  font-weight: bold;
+}
+
+.mt-leadership__item--content {
+  max-width: 800px;
+}
+
+.mt-leadership__item--user-img {
+  position: absolute;
+  right: -50px;
+  bottom: 0;
+  max-width: 40%;
+  max-height: 95%;
+}
+
+.mt-leadership__item--user-img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.mt-leadership .row .col-12:nth-of-type(even) .mt-leadership__item--content {
+  position: relative;
+  margin-left: auto;
+}
+
+.mt-leadership .row .col-12:nth-of-type(even) .mt-leadership__item--user-img {
+  right: auto;
+  left: -50px;
+}
+
+.mt-leadership .row .col-12:nth-of-type(even) .mt-leadership__item:before {
+  content: "";
+  height: 100%;
+  width: 120%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  right: -50px;
+  left: -50px;
+  z-index: 0;
+}
+
+.mt-team {
+  color: #fff;
+}
+
+.mt-team .mt-meeting__img:after {
+  display: none;
 }
 
 @media screen and (min-width: 991px) {
@@ -1102,6 +1392,9 @@ aside.mt-sign-in__form a:hover {
   .container-fluid .mt-aside-wrapper {
     margin-left: -50px;
     margin-right: -15px;
+  }
+  .mt-inner-page-banner__wrapper h2 {
+    left: 50px;
   }
 }
 
