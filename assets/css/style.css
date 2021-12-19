@@ -313,7 +313,7 @@ form .mt-half {
 }
 
 .mt-header .ham-menu__ham-line {
-  background-color: #000;
+  background-color: #214099;
   display: block;
   width: 30px;
   height: 3px;
@@ -381,6 +381,10 @@ form .mt-half {
 
 .mt-header__top {
   padding: 15px 0;
+}
+
+.mt-header__left .mt-search {
+  max-width: 400px;
 }
 
 .mt-header__logo {
@@ -891,11 +895,6 @@ form .mt-half {
   color: #E21F26;
 }
 
-.mt-footer__menu h3 {
-  color: #4D64AD;
-  font-size: 18px;
-}
-
 .mt-footer__menu a {
   padding: 5px 0;
 }
@@ -986,6 +985,12 @@ form .mt-half {
 
 .mt-conditions a {
   margin-right: 20px;
+}
+
+.mt-title-small, .mt-footer__menu h3 {
+  color: #4D64AD !important;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .mt-right {
@@ -1147,11 +1152,6 @@ form .mt-half {
   margin-bottom: -30px;
 }
 
-aside.mt-sign-in__form, .mt-register-offline {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
 aside.mt-sign-in__form {
   color: #fff;
 }
@@ -1248,6 +1248,14 @@ aside.mt-sign-in__form a:hover {
   font-size: 20px;
 }
 
+aside.mt-sign-in__form, .mt-register-offline,
+.mt-aside-wrapper .list-group-item,
+.mt-account-page .mt-section-heading h2,
+.mt-dashboard-content {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .mt-inner-page-banner__wrapper {
   position: relative;
 }
@@ -1260,6 +1268,16 @@ aside.mt-sign-in__form a:hover {
           transform: translateY(-50%);
   color: #fff;
   font-size: 60px;
+  z-index: 1;
+}
+
+.mt-inner-page-banner__wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 300px;
+  max-height: 450px;
+  -o-object-position: left;
+     object-position: left;
 }
 
 .mt-profile-img {
@@ -1300,13 +1318,18 @@ aside.mt-sign-in__form a:hover {
   font-weight: bold;
 }
 
+.mt-value {
+  margin-bottom: -30px;
+}
+
 .mt-value__item {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 .mt-value__item img {
   height: 80px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .mt-value__item h3 {
@@ -1345,6 +1368,9 @@ aside.mt-sign-in__form a:hover {
 
 .mt-leadership__item--content {
   max-width: 800px;
+  width: calc(100% - 200px);
+  position: relative;
+  z-index: 2;
 }
 
 .mt-leadership__item--user-img {
@@ -1353,11 +1379,24 @@ aside.mt-sign-in__form a:hover {
   bottom: 0;
   max-width: 40%;
   max-height: 95%;
+  min-width: 400px;
 }
 
 .mt-leadership__item--user-img img {
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.mt-leadership__banner:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  height: 100%;
+  width: 100%;
 }
 
 .mt-leadership .row .col-12:nth-of-type(even) .mt-leadership__item--content {
@@ -1388,6 +1427,10 @@ aside.mt-sign-in__form a:hover {
 
 .mt-team .mt-meeting__img:after {
   display: none;
+}
+
+.mt-sign-in {
+  margin-bottom: -1px;
 }
 
 @media screen and (min-width: 991px) {
@@ -1445,7 +1488,7 @@ aside.mt-sign-in__form a:hover {
     display: block;
   }
   .ham-menu.active .ham-menu__ham-line {
-    background-color: #333;
+    background-color: #E21F26;
   }
   .mt-header__menu li a {
     padding: 15px 3px;
@@ -1453,7 +1496,13 @@ aside.mt-sign-in__form a:hover {
     font-weight: 600;
   }
   .mt-header .ham-menu {
-    display: inline-block;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .ham-menu.active span:first-of-type {
     -webkit-transform: rotate(45deg);
@@ -1550,6 +1599,12 @@ aside.mt-sign-in__form a:hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mt-inner-page-banner__wrapper h2 {
+    font-size: 40px;
   }
 }
 
