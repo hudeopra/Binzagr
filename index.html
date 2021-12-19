@@ -28,32 +28,42 @@
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="icon" href="assets/img/favicon.png" sizes="32x32" />
     </head>
+    <body>
     <!-- header starts -->
     <header class="mt-header">
             <div class="mt-header__wrapper">
                 <div class="mt-header__top">
                     <div class="container-fluid">
                         <div class="row align-items-center">
-                            <div class="col-12 col-md-6 col-xl-4">
-                                <div class="mt-search">
-                                    <form method="GET" action="" accept-charset="UTF-8">
-                                        <div class="mt-form__wrapper">
-                                            <div class="mt-input-wrapper">
-                                                <input type="text" placeholder="Search Products" value="">
-                                                <button><i class="fa fa-search" aria-hidden="true"></i></button>
-                                            </div>
+                            <div class="col-2 col-lg-5">
+                                <div class="mt-header__left">
+                                    <div class="ham-menu">
+                                        <div class="ham-icon">
+                                            <span class="ham-menu__ham-line"></span>
+                                            <span class="ham-menu__ham-line"></span>
+                                            <span class="ham-menu__ham-line"></span>
                                         </div>
-                                    </form>
+                                    </div>
+                                    <div class="mt-search">
+                                        <form method="GET" action="" accept-charset="UTF-8">
+                                            <div class="mt-form__wrapper">
+                                                <div class="mt-input-wrapper">
+                                                    <input type="text" placeholder="Search Products" value="">
+                                                    <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-12  col-xl-4">
+                            <div class="col-12  col-lg-2">
                                 <div class="mt-header__logo">
                                     <a href="">
                                         <img src="assets/img/Binzagr-logo.svg" alt="">
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-12 col-md-6 col-xl-4">
+                            <div class="col-10 col-lg-5">
                                 <div class="mt-header-right">
                                     <div class="mt-header-contact d-none
                                         d-sm-block">
@@ -62,26 +72,20 @@
                                         <a class="mt-lang-change mt-lang-ar" href="">
                                             <span>العربية</span>
                                         </a>
-                                        <a href="mailto:binzagrprosolutions@binzagr.com.sa">
+                                        <a class="mt-header-contact" href="mailto:binzagrprosolutions@binzagr.com.sa">
                                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
                                         </a>
-                                        <a href="https://wa.me/966920002303"> 
+                                        <a class="mt-header-contact"  href="https://wa.me/966920002303"> 
                                             <i class="fa fa-whatsapp" aria-hidden="true"></i>
                                         </a>
-                                        <a href="">
+                                        <a class="mt-user" href="">
                                             <i class="fa fa-user" aria-hidden="true"></i>
+                                            <img src="assets/img/profile-img.png" alt="">
                                         </a>
-                                        <a href="javascript:void(0)" class="mt-mini-cart-open">
+                                        <a href="javascript:void(0)" class="mt-mini-cart-open mt-btn mt-btn__blue">
                                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                                             Cart
                                         </a>
-                                        <div class="ham-menu">
-                                            <div class="ham-icon">
-                                                <span class="ham-menu__ham-line"></span>
-                                                <span class="ham-menu__ham-line"></span>
-                                                <span class="ham-menu__ham-line"></span>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -93,6 +97,18 @@
                         <div class="mt-header__menu">
                             <div class="mt-header__menu">
                                 <ul>
+                                    <li>
+                                        <div class="mt-search">
+                                            <form method="GET" action="" accept-charset="UTF-8">
+                                                <div class="mt-form__wrapper">
+                                                    <div class="mt-input-wrapper">
+                                                        <input type="text" placeholder="Search Products" value="">
+                                                        <button><i class="fa fa-search" aria-hidden="true"></i></button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
                                     <li class="mt-active-menu">
                                         <a href="">Home</a>
                                     </li>
@@ -118,6 +134,7 @@
                                         <a href="">Connect</a>
                                     </li>
                                 </ul>
+                                
                             </div>
                         </div>
                     </div>
@@ -227,24 +244,24 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="col-12 col-md-10 col-lg-8 m-auto">
+                        <div class="col-12  col-xl-10 m-auto">
                             <div id="counters_1" class="row">
-                                <div class="col-6 col-lg-3">
+                                <div class="col-6 col-xl-3">
                                     <div class="mt-counter-wrapper">
                                         <div class="counter" data-TargetNum="15000" data-Speed="5000"></div><span>Doors</span>
                                     </div>
                                 </div>
-                                <div class="col-6 col-lg-3">
+                                <div class="col-6 col-xl-3">
                                     <div class="mt-counter-wrapper">
                                         <div class="counter" data-TargetNum="40" data-Speed="5000"></div><span>World Class Brands</span>
                                     </div>
                                 </div>
-                                <div class="col-6 col-lg-3">
+                                <div class="col-6 col-xl-3">
                                     <div class="mt-counter-wrapper">
                                         <div class="counter" data-TargetNum="20" data-Speed="2500"></div><span>Best Categories</span>
                                     </div>
                                 </div>
-                                <div class="col-6 col-lg-3">
+                                <div class="col-6 col-xl-3">
                                     <div class="mt-counter-wrapper">
                                         <div class="counter" data-TargetNum="20" data-Speed="2500"></div><span>Cities Coverage</span>
                                     </div>
@@ -593,7 +610,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4">
+                    <div class="col-12 col-lg-4">
                         <div class="mt-home-category__item">
                             <a href="">
                                 <img src="assets/img/Dairy.jpg" alt="">
@@ -609,7 +626,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-md-6  col-lg-4">
                         <div class="mt-home-category__item">
                             <a href="">
                                 <img src="assets/img/Sauces.jpg" alt="">
@@ -761,7 +778,7 @@
             <section class="mt-footer__top mt-section__padding-sm--b">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-md-6 col-lg-2">
+                        <div class="col-6 col-lg-2">
                             <div class="mt-footer__menu">
                                 <h3>Products</h3>
                                 <ul>
@@ -783,7 +800,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-2">
+                        <div class="col-6 col-lg-2">
                             <div class="mt-footer__menu">
                                 <h3>Services</h3>
                                 <ul>
@@ -796,7 +813,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-2">
+                        <div class="col-6 col-lg-2">
                             <div class="mt-footer__menu">
                                 <h3>Binzagr</h3>
                                 <ul>
@@ -812,7 +829,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 col-lg-2">
+                        <div class="col-6 col-lg-2">
                             <div class="mt-footer__menu">
                                 <h3>Support</h3>
                                 <ul>
@@ -847,9 +864,9 @@
                 </div>
             </section>
             <section class="mt-footer__bottom ">
-                <div class="container-fluid mt-section__padding-sm--tb">
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-lg-4 mb-3 mb-lg-0">
                             <div class="d-flex align-items-center">
                                 <h5>Follow Us !</h5>
                                 <ul class="mt-social-icons">
@@ -871,7 +888,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6">
+                        <div class="col-12 col-lg-8">
                             <div class="d-flex mt-right">
                                 <ul class="mt-conditions">
                                     <li>
@@ -890,7 +907,6 @@
         </div>
     </footer>
     <!-- footer ends -->
-    <body>
         <!-- jquery -->
         <script src="assets/library/jquery-3.5.1.min.js"></script>
         <!-- slick-slider -->

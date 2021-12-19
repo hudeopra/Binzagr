@@ -60,29 +60,37 @@ jQuery(document).ready(function ($) {
     $('.mt-product-slider').slick({
         dots: true,
         infinite: true,
-        speed: 5000,
+        speed: 500,
         autoplay: false,
         arrows: false,
         slidesToShow: 5,
-        slidesToScroll: 1,
+        slidesToScroll: 4,
         responsive: [
             {
                 breakpoint: 2001,
                 settings: {
                     slidesToShow: 4,
-                    slidesToScroll: 1,
+                    slidesToScroll: 3,
                 }
             },
             {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 3,
+                    slidesToScroll: 2,
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 1,
+                }
+            },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 1,
                 }
             }
             // You can unslick at a given breakpoint now by adding:
@@ -93,29 +101,31 @@ jQuery(document).ready(function ($) {
     $('.mt-brand-slider').slick({
         dots: true,
         infinite: true,
-        speed: 5000,
+        speed: 800,
         autoplay: true,
         arrows: false,
         slidesToShow: 7,
-        slidesToScroll: 3,
+        slidesToScroll: 7,
         responsive: [
             {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 5,
-                    slidesToScroll: 1,
+                    slidesToScroll: 5,
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
                     slidesToShow: 3,
+                    slidesToScroll: 3,
                 }
             },
             {
                 breakpoint: 601,
                 settings: {
                     slidesToShow: 2,
+                    slidesToScroll: 2,
                 }
             }
             // You can unslick at a given breakpoint now by adding:
