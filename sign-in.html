@@ -17,6 +17,9 @@
         <!-- slider -->
         <link rel="stylesheet" href="assets/library/slick-1.8.1/slick/slick.css"
             />
+        <!-- animate -->
+        <link rel="stylesheet" href="assets/library/animate-css/animate.css"
+        /> 
         <!-- bootstrap -->
         <link rel='stylesheet'
             href="assets/library/bootsrtap/bootstrap.css"
@@ -189,7 +192,7 @@
         <section class="mt-sign-in ">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-lg-5 mt-section__padding-sm--tb">
+                    <div class="col-12 col-lg-5 mt-section__padding-sm--tb wow slideInLeft">
                         <aside class="mt-sign-in__form mt-aside-wrapper">
                             <form action="https://binzagrprof.961digital.com/static/account.html">
                                 <div class="mt-section-heading">
@@ -216,7 +219,7 @@
                             </form>
                         </aside>
                     </div>
-                    <div class="col-12 col-lg-5 mt-section__padding-sm--tb">
+                    <div class="col-12 col-lg-5 mt-section__padding-sm--tb wow slideInRight">
                         <div class="mt-register-offline">
                             <h2>Register with Binzagr</h2>
                             <p>Do you trade with us offline?</p>
@@ -248,7 +251,7 @@
                 <div class="mt-meeting__img">
                     <img src="assets/img/meeting.jpg" alt="">
                 </div>
-                <div class="mt-meeting__content">
+                <div class="mt-meeting__content wow fadeInUp" data-wow-delay="0.5s">
                     <div class="container-fluid">
                         <h2>
                             Set up a meeting to fullfill your needs
@@ -403,5 +406,10 @@
         <script src="assets/library/multi-animated-counter.js"></script>
         <!-- main js -->
         <script src="assets/js/main.js"></script>
+        <!-- wow js -->
+        <script src="assets/library/wow-js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>

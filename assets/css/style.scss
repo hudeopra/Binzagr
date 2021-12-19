@@ -828,7 +828,7 @@ form .mt-half {
     margin-right: 20px;}
 }
 
-.mt-title-small,.mt-footer__menu h3{
+.mt-title-small,.mt-footer__menu h3,.mt-log-out{
   
     color: #4D64AD !important;
     font-size: 18px;
@@ -840,6 +840,7 @@ form .mt-half {
 }
 .mt-aside-wrapper{
   margin-left: -15px;
+  margin-right: -15px;
   background-color: $color-secondary-dark;
   height: 100%;
   color: #fff ;
@@ -938,7 +939,7 @@ form .mt-half {
       background-color: $color-secondary;
     }
   }
-  .btn, .card-body li, .card-body{
+  .card-body li, .card-body{
     border-bottom: 1px solid #4D64AD;
   }
   .btn {
@@ -958,6 +959,9 @@ form .mt-half {
   .mt-product-list{
     margin-bottom: -30px;
   }
+}
+.btn-link{
+ text-decoration: none;
 }
 aside.mt-sign-in__form{
   color: #fff;
@@ -988,7 +992,10 @@ aside.mt-sign-in__form{
   .mt-log-out{
     position: absolute;
     bottom: 30px;
-    left: -20px;
+    left: 10px;
+    &:hover{
+      color: $color-primary !important;
+    }
   }
   .list-group-item{
     img{
@@ -1050,13 +1057,26 @@ aside.mt-sign-in__form{
     }
   }
 }
-
+.mt-portal__portal-menu{
+  display: flex;
+  flex-wrap: wrap;
+}
 aside.mt-sign-in__form,.mt-register-offline,
 .mt-aside-wrapper .list-group-item,
 .mt-account-page .mt-section-heading h2,
-.mt-dashboard-content{
+.mt-product-list-page .mt-section-heading h2,
+.mt-dashboard-content,
+.mt-product-head,
+.mt-product-list-page .btn{
  padding-left:  50px;
  padding-right:  50px;
+}
+
+.mt-product-head{
+  margin-bottom: 30px;
+  .mt-search{
+    margin: 0;
+  }
 }
 .mt-inner-page-banner__wrapper{
   position: relative;
@@ -1210,6 +1230,7 @@ aside.mt-sign-in__form,.mt-register-offline,
 .mt-sign-in {
   margin-bottom: -1px;
 }
+.row>*{position: relative;}
 @media screen and (min-width: 991px){
   .container-fluid{
     padding-left: 50px;
@@ -1364,12 +1385,45 @@ aside.mt-sign-in__form,.mt-register-offline,
       justify-content: center;
     }
   }
+  .mt-tabs .mt-log-out{
+    left: 50px;
+  }
 }
 @media screen and (max-width:767px){
 
   .mt-inner-page-banner__wrapper h2{
     font-size: 40px;
   }
+.mt-product-menu .mt-section-heading{
+  cursor: pointer;
+  &:hover h2{
+    color: $color-primary;
+  }
+  h2:after{    font-family: "FontAwesome";
+    content: "\f107 ";
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 5px;
+    position: absolute;
+    right: 15px;
+    color: #9ACDD9;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  &.active{
+    h2:after {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+  }
+}
+.mt-product-filter{
+  display: none;
+}
+
+.mt-tabs .mt-log-out{
+  bottom: 15px;
+}
 }
 @media screen and (max-width:500px){
   .mt-header-contact{

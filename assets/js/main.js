@@ -44,6 +44,11 @@ jQuery(document).ready(function ($) {
         $('.mt-mini-cart').removeClass('active');
         $('.mt-overlay').removeClass('active');
     });
+    $(document).on('click', '.mt-product-menu .mt-section-heading', function () {
+        $('.mt-product-filter').slideToggle();
+        $('.mt-product-menu .mt-section-heading').toggleClass('active');
+    });
+
     $('.mt-billboard-slider').slick({
         dots: false,
         autoplay: true,

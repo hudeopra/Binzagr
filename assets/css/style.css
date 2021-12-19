@@ -987,7 +987,7 @@ form .mt-half {
   margin-right: 20px;
 }
 
-.mt-title-small, .mt-footer__menu h3 {
+.mt-title-small, .mt-footer__menu h3, .mt-log-out {
   color: #4D64AD !important;
   font-size: 18px;
   font-weight: 500;
@@ -1001,6 +1001,7 @@ form .mt-half {
 
 .mt-aside-wrapper {
   margin-left: -15px;
+  margin-right: -15px;
   background-color: #03153D;
   height: 100%;
   color: #fff;
@@ -1127,7 +1128,7 @@ form .mt-half {
   background-color: #214099;
 }
 
-.mt-product-list-page .btn, .mt-product-list-page .card-body li, .mt-product-list-page .card-body {
+.mt-product-list-page .card-body li, .mt-product-list-page .card-body {
   border-bottom: 1px solid #4D64AD;
 }
 
@@ -1150,6 +1151,10 @@ form .mt-half {
 
 .mt-product-list-page .mt-product-list {
   margin-bottom: -30px;
+}
+
+.btn-link {
+  text-decoration: none;
 }
 
 aside.mt-sign-in__form {
@@ -1183,7 +1188,11 @@ aside.mt-sign-in__form a:hover {
 .mt-tabs .mt-log-out {
   position: absolute;
   bottom: 30px;
-  left: -20px;
+  left: 10px;
+}
+
+.mt-tabs .mt-log-out:hover {
+  color: #E21F26 !important;
 }
 
 .mt-tabs .list-group-item img {
@@ -1248,12 +1257,31 @@ aside.mt-sign-in__form a:hover {
   font-size: 20px;
 }
 
+.mt-portal__portal-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 aside.mt-sign-in__form, .mt-register-offline,
 .mt-aside-wrapper .list-group-item,
 .mt-account-page .mt-section-heading h2,
-.mt-dashboard-content {
+.mt-product-list-page .mt-section-heading h2,
+.mt-dashboard-content,
+.mt-product-head,
+.mt-product-list-page .btn {
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.mt-product-head {
+  margin-bottom: 30px;
+}
+
+.mt-product-head .mt-search {
+  margin: 0;
 }
 
 .mt-inner-page-banner__wrapper {
@@ -1433,6 +1461,10 @@ aside.mt-sign-in__form, .mt-register-offline,
   margin-bottom: -1px;
 }
 
+.row > * {
+  position: relative;
+}
+
 @media screen and (min-width: 991px) {
   .container-fluid {
     padding-left: 50px;
@@ -1600,11 +1632,42 @@ aside.mt-sign-in__form, .mt-register-offline,
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .mt-tabs .mt-log-out {
+    left: 50px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .mt-inner-page-banner__wrapper h2 {
     font-size: 40px;
+  }
+  .mt-product-menu .mt-section-heading {
+    cursor: pointer;
+  }
+  .mt-product-menu .mt-section-heading:hover h2 {
+    color: #E21F26;
+  }
+  .mt-product-menu .mt-section-heading h2:after {
+    font-family: "FontAwesome";
+    content: "\f107 ";
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 5px;
+    position: absolute;
+    right: 15px;
+    color: #9ACDD9;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  .mt-product-menu .mt-section-heading.active h2:after {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+  .mt-product-filter {
+    display: none;
+  }
+  .mt-tabs .mt-log-out {
+    bottom: 15px;
   }
 }
 
