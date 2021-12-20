@@ -356,7 +356,7 @@ form .mt-half {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid #eee;
+  border: 2px solid #eee;
   border-radius: 30px;
   margin-bottom: 0;
   margin: 20px 0;
@@ -406,15 +406,6 @@ form .mt-half {
   font-size: 20px;
 }
 
-.mt-user-options .mt-mini-cart-open {
-  color: #fff;
-}
-
-.mt-user-options .mt-mini-cart-open i {
-  font-size: 18px;
-  padding-right: 10px;
-}
-
 .mt-header__menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -454,6 +445,22 @@ form .mt-half {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.mt-mini-cart-open {
+  color: #fff;
+  font-size: 0;
+  padding: 13px;
+}
+
+.mt-mini-cart-open i {
+  color: #fff;
+  font-size: 18px;
+}
+
+.mt-mini-cart-open:hover {
+  font-size: 16px;
+  padding: 10px 25px;
 }
 
 .mt-user {
@@ -785,6 +792,10 @@ form .mt-half {
 
 .mt-home-category {
   background-color: #214099;
+}
+
+.mt-home-category .col-12 {
+  padding: 0;
 }
 
 .mt-home-category h2 {
@@ -1461,6 +1472,101 @@ aside.mt-sign-in__form, .mt-register-offline,
   margin-bottom: -1px;
 }
 
+.mt-cart__item {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 2fr;
+      grid-template-columns: 3fr 2fr;
+}
+
+.mt-cart__item--close {
+  position: absolute;
+  right: -12px;
+  top: -12px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #214099;
+}
+
+.mt-cart__item--close i {
+  color: #fff;
+}
+
+.mt-cart__item--close i:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.mt-cart__item a {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+}
+
+.mt-quantity {
+  position: relative;
+  background-color: #83D4EC;
+  border-radius: 0;
+  bottom: -15px;
+  right: -15px;
+  border-bottom-right-radius: 14px;
+}
+
+.mt-quantity .btn-number {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  color: inherit;
+}
+
+.mt-quantity .input-qty {
+  height: 40px;
+  text-align: center;
+  font-weight: 600;
+  border: 0;
+  outline: none;
+  padding: 8px 15px;
+  border-radius: 0;
+}
+
+.mt-quantity .quantity-plus {
+  right: 1px;
+  top: 0;
+}
+
+.mt-quantity .quantity-minus::before, .mt-quantity .quantity-plus::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 10px;
+  height: 2px;
+  border-top: 2px solid;
+  margin: auto;
+}
+
+.mt-quantity .quantity-plus::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 2px;
+  height: 10px;
+  border-left: 2px solid;
+  margin: auto;
+}
+
 .row > * {
   position: relative;
 }
@@ -1472,7 +1578,7 @@ aside.mt-sign-in__form, .mt-register-offline,
   }
   .container-fluid .mt-aside-wrapper {
     margin-left: -50px;
-    margin-right: -15px;
+    margin-right: -12px;
   }
   .mt-inner-page-banner__wrapper h2 {
     left: 50px;
@@ -1552,7 +1658,16 @@ aside.mt-sign-in__form, .mt-register-offline,
     height: 4px;
   }
   .mt-header__menu ul {
-    display: none;
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+    left: -100%;
+    width: 100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .mt-header__wrapper.active .mt-header__menu ul {
+    left: 0%;
   }
   h1 {
     font-size: 36px;
@@ -1602,6 +1717,9 @@ aside.mt-sign-in__form, .mt-register-offline,
 }
 
 @media screen and (max-width: 991px) {
+  .mt-header.header_fixed .mt-header__logo {
+    display: none;
+  }
   .mt-header__top .col-2 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -1641,6 +1759,9 @@ aside.mt-sign-in__form, .mt-register-offline,
   .mt-inner-page-banner__wrapper h2 {
     font-size: 40px;
   }
+  .mt-billboard__content h2 {
+    font-size: 28px;
+  }
   .mt-product-menu .mt-section-heading {
     cursor: pointer;
   }
@@ -1674,6 +1795,12 @@ aside.mt-sign-in__form, .mt-register-offline,
 @media screen and (max-width: 500px) {
   .mt-header-contact {
     display: none;
+  }
+  #counters_1 .counter {
+    font-size: 40px;
+  }
+  #counters_1 .mt-counter-wrapper span {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */

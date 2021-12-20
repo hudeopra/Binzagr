@@ -17,6 +17,9 @@
         <!-- slider -->
         <link rel="stylesheet" href="assets/library/slick-1.8.1/slick/slick.css"
             />
+        <!-- animate -->
+        <link rel="stylesheet" href="assets/library/wow-js/animate.css"
+        />    
         <!-- bootstrap -->
         <link rel='stylesheet'
             href="assets/library/bootsrtap/bootstrap.css"
@@ -59,7 +62,7 @@
                             </div>
                             <div class="col-12  col-lg-2">
                                 <div class="mt-header__logo">
-                                    <a href="">
+                                    <a href="https://binzagrstatic.themearabic.com/new/">
                                         <img src="assets/img/Binzagr-logo.svg" alt="">
                                     </a>
                                 </div>
@@ -79,7 +82,7 @@
                                         <a class="mt-header-contact"  href="https://wa.me/966920002303"> 
                                             <i class="fa fa-whatsapp" aria-hidden="true"></i>
                                         </a>
-                                        <a class="mt-user" href="">
+                                        <a class="mt-user" href="https://binzagrstatic.themearabic.com/new/sign-in.html">
                                             <i class="fa fa-user" aria-hidden="true"></i>
                                             <img src="assets/img/profile-img.png" alt="">
                                         </a>
@@ -110,14 +113,14 @@
                                             </form>
                                         </div>
                                     </li>
-                                    <li class="mt-active-menu">
-                                        <a href="">Home</a>
+                                    <li>
+                                        <a href="https://binzagrstatic.themearabic.com/new/">Home</a>
                                     </li>
                                     <li>
-                                        <a href=""> Products</a>
+                                        <a href="https://binzagrstatic.themearabic.com/new/about-us.html"> About Us</a>
                                     </li>
                                     <li>
-                                        <a href="">Shop by Brands</a>
+                                        <a href="https://binzagrstatic.themearabic.com/new/products.html">Shop by Brands</a>
                                     </li>
                                     <li>
                                         <a href="">Shop by Categories</a>
@@ -189,7 +192,7 @@
         <section class="mt-portal mt-tabs">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-md-5 col-xl-3 col-xxl-2">
+                    <div class="col-12 col-md-5 col-xl-3 col-xxl-2 wow slideInLeft">
                         <aside class="mt-aside-wrapper  mt-section__padding-sm--tb">
                             <div class="mt-section-heading">
                                 <h2 class="mt-title-small">My Portal</h3>
@@ -204,13 +207,13 @@
                             </div>
                         </aside>
                     </div>
-                    <div class="col-12 col-md-7 col-xl-9 col-xxl-10">
+                    <div class="col-12 col-md-7 col-xl-9 col-xxl-10 wow slideInRight">
                     <div class="tab-content mt-section__padding-sm--tb" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="list-notification" role="tabpanel" aria-labelledby="list-notification-list">
                             <div class="mt-portal__content">    
                                 <div class="d-flex flex-wrap mb-5">
                                         <div class="col-12 d-flex flex-wrap justify-content-between w-100 align-items-center">
-                                            <h2>Account</h2>
+                                            <h2>My Portal</h2>
                                         <div class="mt-buttons">
                                             <a class="mt-btn mt-btn__blue mr-3 mt-0" href=""><i class="fa fa-shopping-cart mr-2" aria-hidden="true"></i> Order Now</a>
                                             <a class="mt-btn mt-btn__line  mt-0" href=""> <img src="assets/img/wallet.svg" alt=""> Binzagr E-Wallet</a>
@@ -313,7 +316,75 @@
                             <h2 class="">Under Construction</h2>
                         </div>
                         <div class="tab-pane fade" id="list-order" role="tabpanel" aria-labelledby="list-order-list">
-                            <h2 class="">Under Construction</h2>
+                            <div class="mt-portal__content">    
+                                <div class="d-flex flex-wrap mb-5">
+                                        <div class="col-12 d-flex flex-wrap justify-content-between w-100 align-items-center">
+                                            <h2>Shopping Cart</h2>
+                                        <div class="mt-buttons">
+                                            <a class="mt-btn mt-btn__blue mr-3 mt-0" href=""><i class="fa fa-shopping-cart mr-2" aria-hidden="true"></i> Add More</a>
+                                            <a class="mt-btn mt-btn__line  mt-0" href=""> <img src="assets/img/wallet.svg" alt=""> Binzagr E-Wallet</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-xxl-7">
+                                        <div class="mt-cart">
+                                            <div class="mt-cart__item mt-product__item">
+                                                <a class="mt-cart__item--close" href="javascript:void(0)">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </a>
+                                                <div class="mt-cart__item--content">
+                                                    <a class="mt-cart__item--detail" href="">
+                                                        <img src="assets/img/Product-1.jpg" alt="">
+                                                        <div class="mt-cart__item--info">
+                                                            <strong>
+                                                                SAR 78
+                                                            </strong>
+                                                            <p>
+                                                                ArlaPro Cream Cheese
+                                                            </p>
+                                                            <span>
+                                                                6 x 1100 gm
+                                                            </span>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="mt-cart__item--total">
+                                                    <p>
+                                                        Subtotal
+                                                    </p>
+                                                    <strong>
+                                                        SAR 234
+                                                    </strong>
+                                                    <div class="mt-quantity">
+                                                        <a class="btn-number qtyminus quantity-minus" href="javascript:;"><span class="fa
+                                                                fa-minus"></span></a>
+                                                                <input class="input-qty
+                                                            input-text qty text" min="1" max="9999" readonly="" name="qty" type="text" value="1">
+                                                        
+                                                        <a class="btn-number qtyplus quantity-plus" href="javascript:;"><span class="fa
+                                                                fa-plus"></span></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-xxl-5">
+                                        <div class="mt-price-summary">
+                                            <h3 class="mt-title-small">Price Summary</h3>
+                                            <div class="mt-price-summary__sub-total">
+                                                <p>Subtotal</p>
+                                                <strong>SAR 330</strong>
+                                            </div>
+                                            <div class="mt-price-summary__total">
+                                                <p>Total</p>
+                                                <strong>SAR 330</strong>
+                                            </div>
+                                            <a class="mt-btn mt-btn__blue" href="">Checkout</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     </div>
@@ -330,14 +401,14 @@
                 <div class="mt-meeting__img">
                     <img src="assets/img/meeting.jpg" alt="">
                 </div>
-                <div class="mt-meeting__content">
+                <div class="mt-meeting__content wow fadeInUp" data-wow-delay="0.5s">
                     <div class="container-fluid">
                         <h2>
                             Set up a meeting to fullfill your needs
                         </h2>
                         <a href="" class="mt-btn">Contact Us</a>
-                        </div>
                     </div>
+                </div>
             </div>
         </section>
         <!--meeting section ends -->
@@ -485,5 +556,10 @@
         <script src="assets/library/multi-animated-counter.js"></script>
         <!-- main js -->
         <script src="assets/js/main.js"></script>
+        <!-- wow js -->
+        <script src="assets/library/wow-js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>

@@ -24,7 +24,7 @@ jQuery(document).ready(function ($) {
     $(document).on('click', '.ham-menu', function () {
         $('.mt-header__wrapper').toggleClass('active');
         $('.ham-menu').toggleClass('active');
-        $('.mt-header__menu ul').slideToggle();
+        // $('.mt-header__menu ul').slideToggle();
     });
 
 

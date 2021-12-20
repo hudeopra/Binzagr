@@ -17,6 +17,9 @@
         <!-- slider -->
         <link rel="stylesheet" href="assets/library/slick-1.8.1/slick/slick.css"
             />
+        <!-- animate -->
+        <link rel="stylesheet" href="assets/library/wow-js/animate.css"
+        />
         <!-- bootstrap -->
         <link rel='stylesheet'
             href="assets/library/bootsrtap/bootstrap.css"
@@ -59,7 +62,7 @@
                             </div>
                             <div class="col-12  col-lg-2">
                                 <div class="mt-header__logo">
-                                    <a href="">
+                                    <a href="https://binzagrstatic.themearabic.com/new/">
                                         <img src="assets/img/Binzagr-logo.svg" alt="">
                                     </a>
                                 </div>
@@ -79,7 +82,7 @@
                                         <a class="mt-header-contact"  href="https://wa.me/966920002303"> 
                                             <i class="fa fa-whatsapp" aria-hidden="true"></i>
                                         </a>
-                                        <a class="mt-user" href="">
+                                        <a class="mt-user" href="https://binzagrstatic.themearabic.com/new/sign-in.html">
                                             <i class="fa fa-user" aria-hidden="true"></i>
                                             <img src="assets/img/profile-img.png" alt="">
                                         </a>
@@ -110,14 +113,14 @@
                                             </form>
                                         </div>
                                     </li>
-                                    <li class="mt-active-menu">
-                                        <a href="">Home</a>
+                                    <li>
+                                        <a href="https://binzagrstatic.themearabic.com/new/">Home</a>
                                     </li>
                                     <li>
-                                        <a href=""> Products</a>
+                                        <a href="https://binzagrstatic.themearabic.com/new/about-us.html"> About Us</a>
                                     </li>
                                     <li>
-                                        <a href="">Shop by Brands</a>
+                                        <a href="https://binzagrstatic.themearabic.com/new/products.html">Shop by Brands</a>
                                     </li>
                                     <li>
                                         <a href="">Shop by Categories</a>
@@ -189,7 +192,7 @@
         <section class="mt-account mt-tabs">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-md-5 col-xl-3 ">
+                    <div class="col-12 col-md-5 col-xl-3 wow slideInLeft">
                         <aside class="mt-aside-wrapper mt-section__padding-sm--tb">
                             <div class="mt-section-heading">
                                 <h2 class="mt-title-small">Account Setting</h3>
@@ -204,7 +207,7 @@
                             </div>
                         </aside>
                     </div>
-                    <div class="col-12 col-md-7 col-xl-9">
+                    <div class="col-12 col-md-7 col-xl-9 wow slideInRight">
                     <div class="tab-content mt-input-dark mt-dashboard-content mt-section__padding-sm--tb" id="nav-tabContent">
                         <div class="tab-pane fade show active" id="list-account" role="tabpanel" aria-labelledby="list-account-list">
                             <div class="mt-account__content">
@@ -284,7 +287,7 @@
                 <div class="mt-meeting__img">
                     <img src="assets/img/meeting.jpg" alt="">
                 </div>
-                <div class="mt-meeting__content">
+                <div class="mt-meeting__content wow fadeInUp" data-wow-delay="0.5s">
                     <div class="container-fluid">
                         <h2>
                             Set up a meeting to fullfill your needs
@@ -439,5 +442,10 @@
         <script src="assets/library/multi-animated-counter.js"></script>
         <!-- main js -->
         <script src="assets/js/main.js"></script>
+        <!-- wow js -->
+        <script src="assets/library/wow-js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
     </body>
 </html>
