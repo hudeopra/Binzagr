@@ -675,6 +675,7 @@ form .mt-half {
 }
 .mt-home-category{
   background-color: $color-secondary;
+  overflow: hidden;
   .col-12{
     padding: 0;
   }
@@ -1264,18 +1265,23 @@ aside.mt-sign-in__form,.mt-register-offline,
         }
       }
     }
+    img{
+      margin-bottom: 0;
+    }
     a{
       display: grid;
       grid-template-columns: 1fr 3fr;
+      grid-gap: 30px;
     }
   }
 }
 .mt-quantity {
   position: relative;
+  width: calc(100% + 15px);
   background-color: #83D4EC;
   border-radius: 0;
   bottom: -15px;
-  right: -15px;
+  right: -0;
   border-bottom-right-radius: 14px;
 
   .btn-number {
@@ -1324,6 +1330,14 @@ aside.mt-sign-in__form,.mt-register-offline,
 }
 }
 .row>*{position: relative;}
+.mt-billboard{ 
+  overflow: hidden;
+  &__wrapper{
+    > div{
+      padding: 0;
+    }
+  }
+}
 @media screen and (min-width: 991px){
   .container-fluid{
     padding-left: 50px;

@@ -792,6 +792,7 @@ form .mt-half {
 
 .mt-home-category {
   background-color: #214099;
+  overflow: hidden;
 }
 
 .mt-home-category .col-12 {
@@ -1502,19 +1503,25 @@ aside.mt-sign-in__form, .mt-register-offline,
           transform: translate(-50%, -50%);
 }
 
+.mt-cart__item img {
+  margin-bottom: 0;
+}
+
 .mt-cart__item a {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 3fr;
       grid-template-columns: 1fr 3fr;
+  grid-gap: 30px;
 }
 
 .mt-quantity {
   position: relative;
+  width: calc(100% + 15px);
   background-color: #83D4EC;
   border-radius: 0;
   bottom: -15px;
-  right: -15px;
+  right: -0;
   border-bottom-right-radius: 14px;
 }
 
@@ -1569,6 +1576,14 @@ aside.mt-sign-in__form, .mt-register-offline,
 
 .row > * {
   position: relative;
+}
+
+.mt-billboard {
+  overflow: hidden;
+}
+
+.mt-billboard__wrapper > div {
+  padding: 0;
 }
 
 @media screen and (min-width: 991px) {
