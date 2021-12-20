@@ -1032,7 +1032,7 @@ aside.mt-sign-in__form{
     }
   }
 }
-.mt-portal-page,.mt-account-page,.mt-sign-in-page{
+.mt-portal-page{
   background-color: #F7F7FA;
 }
 .mt-portal{
@@ -1247,9 +1247,6 @@ aside.mt-sign-in__form,.mt-register-offline,
     position: relative;
     display: grid;
     grid-template-columns: 3fr 2fr;
-    &:not(:last-of-type){
-      margin-bottom: 30px;
-    }
     &--close{
       position: absolute;
       right: -12px;
@@ -1268,27 +1265,13 @@ aside.mt-sign-in__form,.mt-register-offline,
         }
       }
     }
-    &--info{
-      strong{
-        font-size: 24px;
-      }
-    }
-    &--total{
-      font-size: 30px;
-    }
     img{
       margin-bottom: 0;
-      height: 100%;
-      object-fit: contain;
-      background-color: #B9B6B6;
     }
     a{
       display: grid;
       grid-template-columns: 1fr 3fr;
       grid-gap: 30px;
-    }
-    p{
-      height: auto;
     }
   }
 }
@@ -1304,7 +1287,7 @@ aside.mt-sign-in__form,.mt-register-offline,
   .btn-number {
     position: absolute;
     width: 40px;
-    height: 50px;
+    height: 40px;
     font-size: 0;
     color: inherit;
   }
@@ -1345,35 +1328,6 @@ aside.mt-sign-in__form,.mt-register-offline,
     border-left: 2px solid;
     margin: auto;
 }
-}
-.mt-price-summary{
-  background-color: #fff;
-  border-radius: 14px;
-  padding: 15px;
-  height: 100%;
-  position: relative;
-  strong{
-    font-size: 24px;
-  }
-  &__total,&__sub-total{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  &__sub-total{
-    border-bottom: 1px solid #000;
-    padding-bottom: 15px;
-    margin-bottom: 15px;
-  }
-  &__total{
-    strong{
-      font-size: 34px;
-    }
-  }
-  .mt-btn{
-    position: absolute;
-    bottom: 15px;
-  }
 }
 .row>*{position: relative;}
 .mt-billboard{ 
@@ -1604,9 +1558,5 @@ aside.mt-sign-in__form,.mt-register-offline,
   }
   #counters_1 .mt-counter-wrapper span{
     font-size: 18px;
-  }
-  .mt-cart__item{
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
   }
 }

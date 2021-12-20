@@ -29,6 +29,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
         <!-- main-css -->
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/custom.css">
         <link rel="icon" href="assets/img/favicon.png" sizes="32x32" />
     </head>
     <body>
@@ -81,9 +82,10 @@
                                         <a class="mt-header-contact"  href="https://wa.me/966920002303"> 
                                             <i class="fa fa-whatsapp" aria-hidden="true"></i>
                                         </a>
-                                        <a class="mt-user" href="https://binzagrstatic.themearabic.com/new/sign-in.html">
+                                        <a class="mt-user mt-mini-cart-open mt-btn mt-btn__blue" href="https://binzagrstatic.themearabic.com/new/sign-in.html">
                                             <i class="fa fa-user" aria-hidden="true"></i>
-                                            <img src="assets/img/profile-img.png" alt="">
+                                            <!-- <img src="assets/img/profile-img.png" alt=""> -->
+                                            Sign In/Register
                                         </a>
                                         <a href="javascript:void(0)" class="mt-mini-cart-open mt-btn mt-btn__blue">
                                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -193,9 +195,9 @@
             <div class="mt-billboard__wrapper row no-gutters">
                 <div class="col-lg-8 wow slideInLeft">
                     <div class=" ">
-                        <div class="mt-billboard__item">
-                            <video id="my_video" src="assets/img/banner-video.mp4" type="video/mp4" 
-                            class="mt-intro_video" width="100%" playsinline="" autoplay="" 
+                        <div class="mt-billboard__item" id="">
+                            <video id="my_video leftdiv" src="assets/img/banner-video.mp4" type="video/mp4" 
+                            class="mt-intro_video same-height" width="100%" playsinline="" autoplay="" 
                             muted="" loop="" poster="assets/img/Banner-1.jpg"></video>
                             <div class="mt-billboard__content">
                                 <h2>
@@ -208,14 +210,14 @@
                 </div>
                 <div class="col-lg-4 wow slideInRight">
                     <div class="mt-billboard-slider slider">
-                        <div class="mt-billboard__item">
-                            <img src="assets/img/Banner-2-1.jpg" alt="">
+                        <div class="mt-billboard__item" id="rightdiv">
+                            <img src="assets/img/Banner-2-1.jpg" class="same-height" alt="">
                         </div>
                         <div class="mt-billboard__item">
-                            <img src="assets/img/Banner-2-2.jpg" alt="">
+                            <img src="assets/img/Banner-2-2.jpg" class="same-height" alt="">
                         </div>
                         <div class="mt-billboard__item">
-                            <img src="assets/img/Banner-2-3.jpg" alt="">
+                            <img src="assets/img/Banner-2-3.jpg" class="same-height" alt="">
                         </div>
                         <!-- 
                         <div class="mt-billboard__item" >

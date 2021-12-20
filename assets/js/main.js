@@ -140,6 +140,29 @@ jQuery(document).ready(function ($) {
     });
 
 
-
+    // Test
+    // $.fn.equalHeight = function() {
+    //     var maxHeight = 0;
+    //     return this.each(function(index, box) {
+    //         var boxHeight = $(box).height();
+    //         maxHeight = Math.max(maxHeight, boxHeight);
+    //     }).height(maxHeight);
+    // };
+    //     $('.same-height').css('height','unset');
+    //     $('.same-height').equalHeight();
+    // $(window).resize(function(){
+    //     $('.same-height').css('height','unset');
+    //     $('.same-height').equalHeight();
+    // });
+    
+    setTimeout(function(){
+        var get_height = $('video.same-height').height();
+        $('img.same-height').css("height",get_height);
+    }, 1000);
+    $(window).resize(function(){
+        var get_height = $('video.same-height').height();
+        $('img.same-height').css("height",get_height);
+    })
 
 });
+
