@@ -1227,7 +1227,7 @@ aside.mt-sign-in__form a:hover {
           filter: invert(97%) sepia(100%) saturate(11%) hue-rotate(236deg) brightness(104%) contrast(104%);
 }
 
-.mt-portal-page {
+.mt-portal-page, .mt-account-page, .mt-sign-in-page {
   background-color: #F7F7FA;
 }
 
