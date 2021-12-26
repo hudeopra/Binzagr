@@ -23,7 +23,8 @@ jQuery(document).ready(function ($) {
     navbarFixed();
     $(document).on('click', '.ham-menu', function () {
         $('.mt-header__wrapper').toggleClass('active');
-        $('.ham-menu').toggleClass('active');
+        $('.ham-menu').addClass('active');
+        $(' .mt-overlay').addClass('active');
         // $('.mt-header__menu ul').slideToggle();
     });
 
@@ -43,6 +44,7 @@ jQuery(document).ready(function ($) {
         $('body').removeClass('mt-mini-cart-active');
         $('.mt-mini-cart').removeClass('active');
         $('.mt-overlay').removeClass('active');
+        $('.ham-menu').removeClass('active');
     });
     $(document).on('click', '.mt-product-menu .mt-section-heading', function () {
         $('.mt-product-filter').slideToggle();
@@ -138,30 +140,30 @@ jQuery(document).ready(function ($) {
             // instead of a settings object
         ]
     });
+    // product detail
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: '.slider-for',
+        focusOnSelect: true,
+    });
 
-
-    // Test
-    // $.fn.equalHeight = function() {
-    //     var maxHeight = 0;
-    //     return this.each(function(index, box) {
-    //         var boxHeight = $(box).height();
-    //         maxHeight = Math.max(maxHeight, boxHeight);
-    //     }).height(maxHeight);
-    // };
-    //     $('.same-height').css('height','unset');
-    //     $('.same-height').equalHeight();
-    // $(window).resize(function(){
-    //     $('.same-height').css('height','unset');
-    //     $('.same-height').equalHeight();
-    // });
-    
-    setTimeout(function(){
+    // home banner
+    setTimeout(function () {
         var get_height = $('video.same-height').height();
-        $('img.same-height').css("height",get_height);
+        $('img.same-height').css("height", get_height);
     }, 1000);
-    $(window).resize(function(){
+    $(window).resize(function () {
         var get_height = $('video.same-height').height();
-        $('img.same-height').css("height",get_height);
+        $('img.same-height').css("height", get_height);
     })
 
 });

@@ -74,23 +74,36 @@
                                         d-sm-block">
                                     </div>
                                     <div class="mt-user-options">
-                                        <a class="mt-lang-change mt-lang-ar" href="">
-                                            <span>العربية</span>
-                                        </a>
-                                        <a class="mt-header-contact" href="mailto:binzagrprosolutions@binzagr.com.sa">
-                                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                        </a>
-                                        <a class="mt-header-contact"  href="https://wa.me/966920002303"> 
-                                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                                        </a>
-                                        <a class="mt-user" href="https://binzagrstatic.themearabic.com/new/sign-in.html">
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                            <img src="assets/img/profile-img.png" alt="">
-                                        </a>
-                                        <a href="javascript:void(0)" class="mt-mini-cart-open mt-btn mt-btn__blue">
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                            Cart
-                                        </a>
+                                        <ul class="d-flex align-items-center">
+                                            <li>
+                                                <a class="mt-lang-change mt-lang-ar" href="">
+                                                    <span>العربية</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="mt-header-contact" href="mailto:binzagrprosolutions@binzagr.com.sa">
+                                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="mt-header-contact"  href="https://wa.me/966920002303"> 
+                                                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a class="mt-user mt-header-btn " href="https://binzagrstatic.themearabic.com/new/sign-in.html">
+                                                    <i class="fa fa-user" aria-hidden="true"></i><span>Sign In/Register</span>
+                                                    <!-- <img src="assets/img/profile-img.png" alt=""> -->
+                                                    
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:void(0)" class="mt-header-btn mt-mini-cart-open ">
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                    <span>Cart</span>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -197,6 +210,11 @@
                         <aside class="mt-aside-wrapper  mt-section__padding-sm--tb">
                             <div class="mt-section-heading">
                                 <h2 class="mt-title-small">My Portal</h3>
+                            </div>
+                            <div class="mt-user-profile">
+                                <img src="assets/img/profile-img.png" alt="">
+                                <p>Ahmed Nawaf</p>
+                                <small class="mt-title-small">Company Name</small>
                             </div>
                             <div class="list-group mt-portal-aside" id="list-tab" role="tablist">
                                 <a class="list-group-item list-group-item-action active" id="list-notification-list" 
@@ -327,63 +345,100 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col-12 col-md-8 col-lg-6 col-xxl-7">
-                                        <div class="mt-cart">
-                                            <div class="mt-cart__item mt-product__item">
-                                                <a class="mt-cart__item--close" href="javascript:void(0)">
-                                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                                </a>
-                                                <div class="mt-cart__item--content">
-                                                    <a class="mt-cart__item--detail" href="">
-                                                        <img src="assets/img/Product-1.jpg" alt="">
-                                                        <div class="mt-cart__item--info">
-                                                            <strong>
-                                                                SAR 78
-                                                            </strong>
-                                                            <p>
-                                                                ArlaPro Cream Cheese
-                                                            </p>
-                                                            <span>
-                                                                6 x 1100 gm
-                                                            </span>
-                                                        </div>
-                                                    </a>
-                                                </div>
-                                                <div class="mt-cart__item--total">
-                                                    <p>
-                                                        Subtotal
-                                                    </p>
-                                                    <strong>
-                                                        SAR 234
-                                                    </strong>
-                                                    <div class="mt-quantity">
-                                                        <a class="btn-number qtyminus quantity-minus" href="javascript:;"><span class="fa
-                                                                fa-minus"></span></a>
-                                                                <input class="input-qty
-                                                            input-text qty text" min="1" max="9999" readonly="" name="qty" type="text" value="1">
-                                                        
-                                                        <a class="btn-number qtyplus quantity-plus" href="javascript:;"><span class="fa
-                                                                fa-plus"></span></a>
+                                <div class="row">                                <div class="col-12 col-md-8 col-lg-7 col-xxl-8 mb-5 md-xxl-0">
+                                    <div class="mt-cart">
+                                        <div class="mt-cart__item mt-product__item">
+                                            <a class="mt-cart__item--close" href="javascript:void(0)">
+                                                <i class="fa fa-times" aria-hidden="true"></i>
+                                            </a>
+                                            <div class="mt-cart__item--content">
+                                                <a class="mt-cart__item--detail" href="">
+                                                    <img src="assets/img/Product-1.jpg" alt="">
+                                                    <div class="mt-cart__item--info">
+                                                        <strong>
+                                                            SAR 78
+                                                        </strong>
+                                                        <p>
+                                                            ArlaPro Cream Cheese
+                                                        </p>
+                                                        <span>
+                                                            6 x 1100 gm
+                                                        </span>
                                                     </div>
+                                                </a>
+                                            </div>
+                                            <div class="mt-cart__item--total">
+                                                <p>
+                                                    Subtotal
+                                                </p>
+                                                <strong>
+                                                    SAR 234
+                                                </strong>
+                                                <div class="mt-quantity">
+                                                    <a class="btn-number qtyminus quantity-minus" href="javascript:;"><span class="fa
+                                                            fa-minus"></span></a>
+                                                            <input class="input-qty
+                                                        input-text qty text" min="1" max="9999" readonly="" name="qty" type="text" value="1">
+                                                    
+                                                    <a class="btn-number qtyplus quantity-plus" href="javascript:;"><span class="fa
+                                                            fa-plus"></span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-cart__item mt-product__item">
+                                            <a class="mt-cart__item--close" href="javascript:void(0)">
+                                                <i class="fa fa-times" aria-hidden="true"></i>
+                                            </a>
+                                            <div class="mt-cart__item--content">
+                                                <a class="mt-cart__item--detail" href="">
+                                                    <img src="assets/img/Product-1.jpg" alt="">
+                                                    <div class="mt-cart__item--info">
+                                                        <strong>
+                                                            SAR 78
+                                                        </strong>
+                                                        <p>
+                                                            ArlaPro Cream Cheese
+                                                        </p>
+                                                        <span>
+                                                            6 x 1100 gm
+                                                        </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="mt-cart__item--total">
+                                                <p>
+                                                    Subtotal
+                                                </p>
+                                                <strong>
+                                                    SAR 234
+                                                </strong>
+                                                <div class="mt-quantity">
+                                                    <a class="btn-number qtyminus quantity-minus" href="javascript:;"><span class="fa
+                                                            fa-minus"></span></a>
+                                                            <input class="input-qty
+                                                        input-text qty text" min="1" max="9999" readonly="" name="qty" type="text" value="1">
+                                                    
+                                                    <a class="btn-number qtyplus quantity-plus" href="javascript:;"><span class="fa
+                                                            fa-plus"></span></a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-md-4 col-lg-6 col-xxl-5">
-                                        <div class="mt-price-summary">
-                                            <h3 class="mt-title-small">Price Summary</h3>
-                                            <div class="mt-price-summary__sub-total">
-                                                <p>Subtotal</p>
-                                                <strong>SAR 330</strong>
-                                            </div>
-                                            <div class="mt-price-summary__total">
-                                                <p>Total</p>
-                                                <strong>SAR 330</strong>
-                                            </div>
-                                            <a class="mt-btn mt-btn__blue" href="">Checkout</a>
+                                </div>
+                                <div class="col-12 col-md-4 col-lg-5 col-xxl-4">
+                                    <div class="mt-price-summary">
+                                        <h3 class="mt-title-small">Price Summary</h3>
+                                        <div class="mt-price-summary__sub-total">
+                                            <p>Subtotal</p>
+                                            <strong>SAR 330</strong>
                                         </div>
+                                        <div class="mt-price-summary__total">
+                                            <p>Total</p>
+                                            <strong>SAR 330</strong>
+                                        </div>
+                                        <a class="mt-btn mt-btn__blue" href="">Checkout</a>
                                     </div>
+                                </div>
                                 </div>
                             </div>
                         </div>
