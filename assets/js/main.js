@@ -154,6 +154,7 @@ jQuery(document).ready(function ($) {
         arrows: false,
         asNavFor: '.slider-for',
         focusOnSelect: true,
+        vertical: true,
     });
 
     // home banner
@@ -168,3 +169,9 @@ jQuery(document).ready(function ($) {
 
 });
 
+//toggle order summary
+$(document).on('click', '.mt-aside__head ', function () {
+
+    $('.mt-aside__body').slideToggle();
+
+});

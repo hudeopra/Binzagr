@@ -71,6 +71,9 @@ p{font-weight: 600;}
       background-color: unset;
     }
   }
+  &__invert--line{
+    border: 2px solid $color-primary !important;
+  }
 }
 .slick-dots {
   position: absolute;
@@ -734,11 +737,11 @@ li{
     border-radius: 14px;
     margin-bottom: 5px;
   }
-  p{
+  h4{
     margin-top: 10px;
     font-weight: bold;
     margin-bottom: 0;
-    height: 47.6px;
+    font-size: 20px;
   }
   a{
     display: block;
@@ -2056,5 +2059,41 @@ aside.mt-sign-in__form,.mt-register-offline,
   }
   #counters_1 .mt-counter-wrapper span{
     font-size: 18px;
+  }
+}
+.mt-grid_row{
+  column-count: 4;
+  column-gap: 30px;
+}
+.mt-grid_row .mt-grid_col{
+  margin: 0;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  break-inside: avoid;
+  text-align: center;
+  border-radius: 15px;
+}
+@media screen and (max-width: 1400px){
+  .mt-grid_row{
+      column-count: 3;
+  }
+}
+@media screen and (max-width: 1200px){
+  .mt-grid_row{
+      column-count: 2;
+  }
+}
+@media screen and (max-width: 575px) {
+  .mt-grid_row{
+      column-count: 1;
+  }
+}
+.mt-homepage{
+  .mt-product__item--img{
+    img{
+      height: 261px;
+      object-fit: contain;
+      background-color: #fff;
+    }
   }
 }
