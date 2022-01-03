@@ -23,28 +23,37 @@ jQuery(document).ready(function ($) {
     navbarFixed();
     $(document).on('click', '.ham-menu', function () {
         $('.mt-header__wrapper').toggleClass('active');
-        $('.ham-menu').addClass('active');
-        $(' .mt-overlay').addClass('active');
+        $('.ham-menu').toggleClass('active');
+        $(' .mt-overlay').toggleClass('active');
         // $('.mt-header__menu ul').slideToggle();
     });
 
-
+    //mobile sub menu
+    $('.mt-header__menu .menu-item-has-children > a').each(function () {
+        $(this).after("<span class='sub-toggle'><i class='mt-icon icon-arrow_right'></i></span>");
+    });
+    $(document).on('click', '.sub-toggle', function () {
+        $(this).toggleClass('active').next('ul').slideToggle();
+    });
 
     $(document).on('click', '.mt-mini-cart-open ', function () {
         $('body').addClass('mt-mini-cart-active');
         $('.mt-mini-cart').addClass('active');
-        $(' .mt-overlay').addClass('active');
+        $('.mt-overlay').addClass('active');
+        $('.mt-overlay').css({ "z-index": "7" });
     });
     $(document).on('click', '.mt-cart-close ', function () {
         $('body').removeClass('mt-mini-cart-active');
         $('.mt-mini-cart').removeClass('active');
         $('.mt-overlay').removeClass('active');
+        $('.mt-overlay').css({ "z-index": "5" });
     });
     $(document).on('click', '.mt-overlay', function () {
         $('body').removeClass('mt-mini-cart-active');
         $('.mt-mini-cart').removeClass('active');
         $('.mt-overlay').removeClass('active');
         $('.ham-menu').removeClass('active');
+        $('.mt-header__wrapper').removeClass('active');
     });
     $(document).on('click', '.mt-product-menu .mt-section-heading', function () {
         $('.mt-product-filter').slideToggle();
@@ -115,6 +124,13 @@ jQuery(document).ready(function ($) {
         slidesToScroll: 7,
         responsive: [
             {
+                breakpoint: 1350,
+                settings: {
+                    slidesToShow: 6,
+                    slidesToScroll: 6,
+                }
+            },
+            {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 5,
@@ -155,6 +171,17 @@ jQuery(document).ready(function ($) {
         asNavFor: '.slider-for',
         focusOnSelect: true,
         vertical: true,
+
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    vertical: false,
+                    variableWidth: true,
+
+                }
+            }
+        ]
     });
 
     // home banner
